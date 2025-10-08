@@ -1,0 +1,10 @@
+2025-10-08 22:21:57.762 [info] Extension host with pid 36648 started
+2025-10-08 22:21:57.762 [info] Skipping acquiring lock for /home/jay-singh/.config/Code - OSS/User/workspaceStorage/2f00f5ec12caf23a0722d969ccdd6ca3.
+2025-10-08 22:21:57.905 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-10-08 22:21:57.919 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-10-08 22:21:58.023 [info] Eager extensions activated
+2025-10-08 22:21:58.027 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-08 22:21:58.031 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-08 22:22:01.133 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-10-08 22:22:04.956 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-08 22:23:24.911 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'

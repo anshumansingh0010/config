@@ -1,0 +1,3 @@
+filepath=$(cat "/home/jay-singh/.config/variety/wallpaper/wallpaper.jpg.txt")
+echo "$filepath"
+caelestia wallpaper -f 

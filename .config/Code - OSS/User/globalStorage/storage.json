@@ -1,0 +1,110 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
+    "telemetry.devDeviceId": "3fcd3de9-b92a-4cd9-a2ea-e01a49376b3f",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///etc/xdg/quickshell/caelestia"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1759934442491"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/jay-singh": "__default__profile__",
+            "file:///etc/xdg/quickshell/caelestia": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1759934442491": "__default__profile__"
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///etc/xdg/quickshell/caelestia",
+            "backupPath": "/home/jay-singh/.config/Code - OSS/Backups/d1e51c447756edc75235a702d6e89994",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 765,
+                "height": 980
+            }
+        },
+        "openedWindows": [
+            {
+                "backupPath": "/home/jay-singh/.config/Code - OSS/Backups/1759934442491",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1600,
+                    "height": 1000
+                }
+            },
+            {
+                "folder": "file:///etc/xdg/quickshell/caelestia",
+                "backupPath": "/home/jay-singh/.config/Code - OSS/Backups/d1e51c447756edc75235a702d6e89994",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 765,
+                    "height": 980
+                }
+            }
+        ]
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 186,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 186,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "486d29c596060f1ccb578cff1696f4e0": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "2f00f5ec12caf23a0722d969ccdd6ca3": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}
