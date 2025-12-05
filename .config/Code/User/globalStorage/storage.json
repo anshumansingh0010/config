@@ -7,6 +7,9 @@
         "folders": [
             {
                 "folderUri": "file:///usr/lib/python3.13/site-packages/caelestia"
+            },
+            {
+                "folderUri": "file:///home/jay/.config/variety"
             }
         ],
         "emptyWindows": [
@@ -27,7 +30,8 @@
             "file:///home/jay/tmptasks/gitsave/config": "__default__profile__",
             "file:///home/jay/tmptasks/experiment/shell": "__default__profile__",
             "file:///etc/xdg/quickshell/caelestia": "__default__profile__",
-            "file:///usr/lib/python3.13/site-packages/caelestia": "__default__profile__"
+            "file:///usr/lib/python3.13/site-packages/caelestia": "__default__profile__",
+            "file:///home/jay/.config/variety": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -56,15 +60,15 @@
             "titleBarHeight": 35,
             "activityBarWidth": 48,
             "sideBarWidth": 186,
-            "auxiliaryBarWidth": 458,
+            "auxiliaryBarWidth": 186,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///usr/lib/python3.13/site-packages/caelestia",
-            "backupPath": "/home/jay/.config/Code/Backups/4e25cbb506029d403c5c10eed296dfa3",
+            "folder": "file:///home/jay/.config/variety",
+            "backupPath": "/home/jay/.config/Code/Backups/67b15db32c04c3f07515a47b2bfc119c",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -73,12 +77,35 @@
                 "height": 980
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///usr/lib/python3.13/site-packages/caelestia",
+                "backupPath": "/home/jay/.config/Code/Backups/4e25cbb506029d403c5c10eed296dfa3",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 765,
+                    "height": 980
+                }
+            },
+            {
+                "folder": "file:///home/jay/.config/variety",
+                "backupPath": "/home/jay/.config/Code/Backups/67b15db32c04c3f07515a47b2bfc119c",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 765,
+                    "height": 980
+                }
+            }
+        ]
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
             "sideBarWidth": 186,
-            "auxiliaryBarWidth": 458,
+            "auxiliaryBarWidth": 186,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
@@ -121,6 +148,10 @@
                     "auxiliaryBarVisible": true
                 },
                 "44e1bf249446a8ed9157a2c1367a50c8": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "3757b112665855507bd972a33b654c58": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }
