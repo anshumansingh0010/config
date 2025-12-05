@@ -290,6 +290,6 @@ else
         nitrogen --set-zoom-fill --save "$WP" 2>/dev/null
     fi
 fi
-filepath=$(cat "/home/jay-singh/.config/variety/wallpaper/wallpaper.jpg.txt")
+filepath=$(cat /home/$(echo $USER)/.config/variety/wallpaper/wallpaper.jpg.txt)
 caelestia wallpaper -f "$filepath"
 exit 0

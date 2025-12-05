@@ -1,0 +1,126 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
+    "telemetry.devDeviceId": "9e865cae-afd6-4539-983e-72a53d1f879b",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/jay/.config/hypr"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1764911487765"
+            },
+            {
+                "backupFolder": "1764911511460"
+            },
+            {
+                "backupFolder": "1764911961359"
+            },
+            {
+                "backupFolder": "1764912156034"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/jay/.config/caelestia": "__default__profile__",
+            "file:///home/jay/.config/hypr/hyprland": "__default__profile__",
+            "file:///home/jay/.config/hypr": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1764911487765": "__default__profile__",
+            "1764911511460": "__default__profile__",
+            "1764911961359": "__default__profile__",
+            "1764912156034": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/jay/.config/Code/Backups/1764912156034",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1600,
+                "height": 1000
+            }
+        },
+        "openedWindows": [
+            {
+                "folder": "file:///home/jay/.config/hypr",
+                "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1600,
+                    "height": 1000
+                }
+            },
+            {
+                "backupPath": "/home/jay/.config/Code/Backups/1764912156034",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1600,
+                    "height": 1000
+                }
+            }
+        ]
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 186,
+            "auxiliaryBarWidth": 338,
+            "workspaces": {
+                "4234b4b18fd94cdc550e40e60e4caa78": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "dcdb94ab4165cf062d5df2fc09e22f07": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "47c578ef4c48dbe7d7e34578eee7b52f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

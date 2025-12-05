@@ -1,0 +1,3 @@
+exec-once=~/.scripts/downloadManagment.sh
+exec-once=variety &
+
