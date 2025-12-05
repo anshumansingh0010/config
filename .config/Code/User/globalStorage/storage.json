@@ -1,42 +1,25 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
-    "telemetry.devDeviceId": "9e865cae-afd6-4539-983e-72a53d1f879b",
+    "telemetry.devDeviceId": "522955c3-afab-478d-9dc4-d1b090c59bc1",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/jay/.config/hypr"
+                "folderUri": "file:///home/jay/.scripts"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1764911487765"
-            },
-            {
-                "backupFolder": "1764911511460"
-            },
-            {
-                "backupFolder": "1764911961359"
-            },
-            {
-                "backupFolder": "1764912156034"
-            }
-        ]
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "profileAssociations": {
         "workspaces": {
             "file:///home/jay/.config/caelestia": "__default__profile__",
             "file:///home/jay/.config/hypr/hyprland": "__default__profile__",
-            "file:///home/jay/.config/hypr": "__default__profile__"
+            "file:///home/jay/.config/hypr": "__default__profile__",
+            "file:///home/jay/.scripts": "__default__profile__"
         },
-        "emptyWindows": {
-            "1764911487765": "__default__profile__",
-            "1764911511460": "__default__profile__",
-            "1764911961359": "__default__profile__",
-            "1764912156034": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
@@ -62,51 +45,30 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
-            "auxiliaryBarWidth": 0,
+            "sideBarWidth": 186,
+            "auxiliaryBarWidth": 186,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/jay/.config/Code/Backups/1764912156034",
+            "folder": "file:///home/jay/.scripts",
+            "backupPath": "/home/jay/.config/Code/Backups/e6518b8d769fa28594da7c9072377544",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 1600,
-                "height": 1000
+                "width": 765,
+                "height": 980
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/jay/.config/hypr",
-                "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            },
-            {
-                "backupPath": "/home/jay/.config/Code/Backups/1764912156034",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
             "sideBarWidth": 186,
-            "auxiliaryBarWidth": 338,
+            "auxiliaryBarWidth": 186,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
@@ -119,6 +81,14 @@
                 "47c578ef4c48dbe7d7e34578eee7b52f": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
+                },
+                "2bef99ad51dd1ceb8226aaa058fcb24e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "0e651a4e3506eab531de3c8b27a87e62": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
                 }
             }
         }

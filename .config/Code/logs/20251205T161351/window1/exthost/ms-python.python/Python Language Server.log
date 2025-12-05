@@ -1,0 +1,38 @@
+2025-12-05 16:16:03.493 [info] Client: Pylance client (2025.10.4) started with python extension (2025.18.0)
+2025-12-05 16:16:03.945 [info] (21662): Server root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist
+2025-12-05 16:16:03.945 [info] (21662): Pylance language server 2025.10.4 (pyright version 1.1.407, commit 906e40aa) starting
+2025-12-05 16:16:03.949 [info] (21662): Starting service instance ".scripts" for workspace "/home/jay/.scripts"
+2025-12-05 16:16:04.486 [info] (21662): Loading background bundle file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js into file:///home/jay/.scripts...
+2025-12-05 16:16:04.561 [info] (21662): FG(.scripts): Setting environmentName for service ".scripts": "3.13.7 (global)"
+2025-12-05 16:16:04.561 [info] (21662): FG(.scripts): Setting pythonPath for service ".scripts": "/bin/python"
+2025-12-05 16:16:04.561 [info] (21662): FG(.scripts): No include entries specified; assuming /home/jay/.scripts
+2025-12-05 16:16:04.562 [info] (21662): FG(.scripts): Auto-excluding **/node_modules
+2025-12-05 16:16:04.562 [info] (21662): FG(.scripts): Auto-excluding **/__pycache__
+2025-12-05 16:16:04.562 [info] (21662): FG(.scripts): Auto-excluding **/.*
+2025-12-05 16:16:04.584 [info] (21662): FG(.scripts): Assuming Python version 3.13.7.final.0
+2025-12-05 16:16:04.631 [info] (21662): Settings have not changed. Skipping update.
+2025-12-05 16:16:04.637 [info] (21662): Starting Mcp server id:4360 ...
+2025-12-05 16:16:04.652 [info] (21662): FG(.scripts): No source files found.
+2025-12-05 16:16:04.974 [info] (21662): PQ(.scripts): Priority queue background worker(2) root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist
+2025-12-05 16:16:04.974 [info] (21662): PQ(.scripts): Priority queue background worker(2) started
+2025-12-05 16:16:05.109 [info] (21662): IDX(.scripts): Indexer background runner(3) root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist (index)
+2025-12-05 16:16:05.109 [info] (21662): IDX(.scripts): Indexing(3) started
+2025-12-05 16:16:05.185 [info] (21662): BG(.scripts): Loaded external background bundle file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist/copilot-background.bundle.js. 
+2025-12-05 16:16:05.346 [info] (21662): IDX(.scripts): scanned(3) 89 files over 1 exec env
+2025-12-05 16:16:05.998 [info] (21662): IDX(.scripts): indexed(3) 89 files over 1 exec env
+2025-12-05 16:16:06.010 [info] (21662): IDX(.scripts): Indexing finished(3).
+2025-12-05 16:19:37.207 [info] (21662): IDX(.scripts): Indexer background runner(4) root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist (refresh)
+2025-12-05 16:19:37.207 [info] (21662): IDX(.scripts): Indexing(4) started
+2025-12-05 16:19:37.314 [info] (21662): IDX(.scripts): scanned(4) 89 files over 1 exec env
+2025-12-05 16:19:37.470 [info] (21662): IDX(.scripts): indexed(4) 89 files over 1 exec env
+2025-12-05 16:19:37.498 [info] (21662): IDX(.scripts): Indexing finished(4).
+2025-12-05 16:20:19.458 [info] (21662): IDX(.scripts): Indexer background runner(5) root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist (refresh)
+2025-12-05 16:20:19.458 [info] (21662): IDX(.scripts): Indexing(5) started
+2025-12-05 16:20:19.560 [info] (21662): IDX(.scripts): scanned(5) 89 files over 1 exec env
+2025-12-05 16:20:19.649 [info] (21662): IDX(.scripts): indexed(5) 89 files over 1 exec env
+2025-12-05 16:20:19.676 [info] (21662): IDX(.scripts): Indexing finished(5).
+2025-12-05 16:20:47.858 [info] (21662): IDX(.scripts): Indexer background runner(6) root directory: file:///home/jay/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist (refresh)
+2025-12-05 16:20:47.859 [info] (21662): IDX(.scripts): Indexing(6) started
+2025-12-05 16:20:47.964 [info] (21662): IDX(.scripts): scanned(6) 89 files over 1 exec env
+2025-12-05 16:20:48.080 [info] (21662): IDX(.scripts): indexed(6) 89 files over 1 exec env
+2025-12-05 16:20:48.087 [info] (21662): IDX(.scripts): Indexing finished(6).

@@ -1,0 +1,22 @@
+2025-12-05 16:13:52.250 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-05 16:13:52.391 [info] Started local extension host with pid 9730.
+2025-12-05 16:13:52.710 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-05 16:13:52.837 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-05 16:13:54.995 [info] [perf] Render performance baseline is 18ms
+2025-12-05 16:15:47.112 [error] Cancelled: Canceled: Canceled
+    at lQe.L (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:35089)
+    at async lQe.K (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:33813)
+    at async lQe.C (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:24533)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:23898
+    at async Promise.all (index 1)
+    at async lQe.B (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:23852)
+    at async lQe.getExtensions (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:22509)
+    at async Vut.getExtensions (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2493:15152)
+    at async yQs.Rc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2489:17026)
+    at async yQs.$c (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2489:19670)
+2025-12-05 16:16:22.680 [error] [text file model] handleSaveError(20) - exit - resulted in a save error: Error: Unable to write file '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py') file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
+2025-12-05 16:16:25.258 [error] [text file model] handleSaveError(20) - exit - resulted in a save error: Error: No polkit authentication agent found. file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
+2025-12-05 16:16:27.464 [error] [text file model] handleSaveError(20) - exit - resulted in a save error: Error: No polkit authentication agent found. file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
+2025-12-05 16:16:28.534 [error] [text file model] handleSaveError(20) - exit - resulted in a save error: Error: No polkit authentication agent found. file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
+2025-12-05 16:19:54.307 [error] [text file model] handleSaveError(22) - exit - resulted in a save error: Error: Unable to write file '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py') file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
+2025-12-05 16:20:37.277 [error] [text file model] handleSaveError(25) - exit - resulted in a save error: Error: Unable to write file '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py') file:///usr/lib/python3.13/site-packages/caelestia/utils/wallpaper.py
