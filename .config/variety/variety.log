@@ -11207,3 +11207,711 @@ INFO: 2025-12-05 20:21:02,827: build_imagemagick_filter_cmd() 'ImageMagick filte
 INFO: 2025-12-05 20:21:03,127: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg'
 INFO: 2025-12-05 20:21:03,128: list_files() 'More than 1 files in the folders, stop listing'
 INFO: 2025-12-05 20:21:04,826: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:24:04,826: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:24:04,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:24:04,827: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:24:04,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:24:04,827: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-05 20:24:04,827: download_one() 'Wallhaven.cc: Queue size: 0'
+INFO: 2025-12-05 20:24:04,827: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:24:04,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:24:04,827: download_one() 'Wallhaven.cc: Filling queue'
+INFO: 2025-12-05 20:24:04,827: search() 'Performing wallhaven search: url=https://wallhaven.cc/toplist'
+ERROR: 2025-12-05 20:24:05,002: request() 'SSL Error for url https://wallhaven.cc/toplist:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+ERROR: 2025-12-05 20:24:05,013: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/VarietyWindow.py", line 1166, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py", line 147, in fill_queue
+    return self.legacy_downloader.fill_queue()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 119, in fill_queue
+    s, count = self.search()
+               ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 53, in search
+    soup = Util.html_soup(url)
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 688, in html_soup
+    return bs4.BeautifulSoup(Util.fetch(url, data, **request_kwargs), "lxml")
+                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 676, in fetch
+    return Util.request(url, data, **request_kwargs).text
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+INFO: 2025-12-05 20:25:38,823: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:38,826: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:38,826: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:38,827: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png'
+INFO: 2025-12-05 20:25:38,827: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png, time: 1764946538.8273203'
+INFO: 2025-12-05 20:25:38,827: build_imagemagick_filter_cmd() 'Applying filter: -paint 8'
+INFO: 2025-12-05 20:25:38,827: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png -scale 3200x2000^ -paint 8 /home/jay/.config/variety/wallpaper/wallpaper-filter-f4a84d103edb9860decb0c0520362031.jpg'
+INFO: 2025-12-05 20:25:40,827: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:25:40,827: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-05 20:25:40,827: download_one() 'Wallhaven.cc: Queue size: 0'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:25:40,827: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:25:40,827: download_one() 'Wallhaven.cc: Filling queue'
+INFO: 2025-12-05 20:25:40,827: search() 'Performing wallhaven search: url=https://wallhaven.cc/toplist'
+ERROR: 2025-12-05 20:25:40,984: request() 'SSL Error for url https://wallhaven.cc/toplist:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+ERROR: 2025-12-05 20:25:40,988: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/VarietyWindow.py", line 1166, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py", line 147, in fill_queue
+    return self.legacy_downloader.fill_queue()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 119, in fill_queue
+    s, count = self.search()
+               ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 53, in search
+    soup = Util.html_soup(url)
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 688, in html_soup
+    return bs4.BeautifulSoup(Util.fetch(url, data, **request_kwargs), "lxml")
+                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 676, in fetch
+    return Util.request(url, data, **request_kwargs).text
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+INFO: 2025-12-05 20:25:41,158: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png'
+INFO: 2025-12-05 20:25:41,159: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:25:47,147: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:47,149: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:47,149: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:47,149: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:47,149: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg, time: 1764946547.1496637'
+INFO: 2025-12-05 20:25:47,150: build_imagemagick_filter_cmd() 'Applying filter: -scale 20% -blur 0x2 -resize 500%'
+INFO: 2025-12-05 20:25:47,150: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg -scale 3200x2000^ -scale 20% -blur 0x2 -resize 500% /home/jay/.config/variety/wallpaper/wallpaper-filter-056d74cca19559e53cf9393bfd518596.jpg'
+INFO: 2025-12-05 20:25:47,854: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:47,855: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:25:49,149: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:25:50,723: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:50,725: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:50,726: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:50,726: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg'
+INFO: 2025-12-05 20:25:50,726: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg, time: 1764946550.7266963'
+INFO: 2025-12-05 20:25:50,727: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-05 20:25:50,727: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-79cd45c34afffdffd87f527fd2489ed7.jpg'
+INFO: 2025-12-05 20:25:51,162: update_indicator() 'Setting file info to: /home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg'
+INFO: 2025-12-05 20:25:51,163: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:25:52,726: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:25:53,580: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:53,583: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:53,583: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:53,584: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:53,584: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg, time: 1764946553.5846415'
+INFO: 2025-12-05 20:25:53,585: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-05 20:25:53,585: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-8ca6b343ee6e2ccdfdf5849d2cf3ccd5.jpg'
+INFO: 2025-12-05 20:25:54,187: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:54,188: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:25:55,584: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:25:56,364: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:56,366: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:56,366: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:56,366: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg'
+INFO: 2025-12-05 20:25:56,366: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg, time: 1764946556.3668737'
+INFO: 2025-12-05 20:25:56,375: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg'
+INFO: 2025-12-05 20:25:56,376: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:25:58,367: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:25:58,552: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:25:58,555: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:25:58,555: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:25:58,555: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:58,555: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg, time: 1764946558.5559447'
+INFO: 2025-12-05 20:25:58,563: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg'
+INFO: 2025-12-05 20:25:58,565: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:26:00,555: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:26:00,847: process_command() 'Received command: ['--next']'
+INFO: 2025-12-05 20:26:00,850: change_wallpaper() 'No images yet in prepared buffer, using some random image'
+INFO: 2025-12-05 20:26:00,850: prepare_thread() 'Prepared buffer contains 62 images'
+INFO: 2025-12-05 20:26:00,851: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg'
+INFO: 2025-12-05 20:26:00,851: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg, time: 1764946560.8515577'
+INFO: 2025-12-05 20:26:00,851: build_imagemagick_filter_cmd() 'Applying filter: -paint 8'
+INFO: 2025-12-05 20:26:00,852: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg -scale 3200x2000^ -paint 8 /home/jay/.config/variety/wallpaper/wallpaper-filter-1b47b195fbc5a8cff08ddde498ad8e85.jpg'
+INFO: 2025-12-05 20:26:02,851: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-05 20:26:03,260: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg'
+INFO: 2025-12-05 20:26:03,261: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-05 20:29:02,851: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:29:02,852: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:29:02,852: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:29:02,852: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:29:02,852: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-05 20:29:02,852: download_one() 'Wallhaven.cc: Queue size: 0'
+INFO: 2025-12-05 20:29:02,852: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-05 20:29:02,852: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-05 20:29:02,852: download_one() 'Wallhaven.cc: Filling queue'
+INFO: 2025-12-05 20:29:02,852: search() 'Performing wallhaven search: url=https://wallhaven.cc/toplist'
+ERROR: 2025-12-05 20:29:02,995: request() 'SSL Error for url https://wallhaven.cc/toplist:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+ERROR: 2025-12-05 20:29:03,000: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/usr/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL] unknown error (_ssl.c:1032)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/VarietyWindow.py", line 1166, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py", line 147, in fill_queue
+    return self.legacy_downloader.fill_queue()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 119, in fill_queue
+    s, count = self.search()
+               ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 53, in search
+    soup = Util.html_soup(url)
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 688, in html_soup
+    return bs4.BeautifulSoup(Util.fetch(url, data, **request_kwargs), "lxml")
+                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 676, in fetch
+    return Util.request(url, data, **request_kwargs).text
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='wallhaven.cc', port=443): Max retries exceeded with url: /toplist (Caused by SSLError(SSLError(1, '[SSL] unknown error (_ssl.c:1032)')))

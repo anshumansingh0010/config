@@ -1,5 +1,12 @@
 0
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg
+/home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55117.jpg
 /home/jay/.config/variety/Favorites/wallhaven-3ql9e3.jpg
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w55vwr.png
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrlzr.jpg
@@ -92,10 +99,3 @@
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ly897r.jpg
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-og3zqp.png
 /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-8g53py.png
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-lyyypr.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jj2zy.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ly3emq.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-8gg3lo.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-og3zqp.png
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jexxry.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ml3d2y.jpg
