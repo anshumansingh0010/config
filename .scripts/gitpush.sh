@@ -1,6 +1,6 @@
 #!/bin/bash
 paths=(".config" ".scripts")
-
+mkdir -p  ~/tmptasks/gitsave/config/
 for path in "${paths[@]}"; do
  rm -rf ~/tmptasks/gitsave/config/$path
  echo ~/tmptasks/gitsave/config/$path

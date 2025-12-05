@@ -1,0 +1,11 @@
+.config/gh
+.config/Code
+.config/Code - OSS
+.config/variety/Downloaded
+.vscode/extensions
+.vscode/workspaceStorage
+.idea/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db   

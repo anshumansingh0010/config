@@ -1,1 +1,1 @@
-{"python.locator":"native","workbench.secondarySideBar.enableDefaultVisibilityInOldWorkspace":true,"chat.signInWithAlternateScopes":true}
+{"workbench.secondarySideBar.enableDefaultVisibilityInOldWorkspace":true,"chat.signInWithAlternateScopes":true,"chat.extensionUnification.enabled":true,"workbench.editorAssociations":{"*.copilotmd":"vscode.markdown.preview.editor"},"github.copilot.nextEditSuggestions.enabled":true,"python.locator":"native"}

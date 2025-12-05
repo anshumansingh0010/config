@@ -6,10 +6,14 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/jay/.scripts"
+                "folderUri": "file:///usr/lib/python3.13/site-packages/caelestia"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1764941718903"
+            }
+        ]
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -17,7 +21,13 @@
             "file:///home/jay/.config/caelestia": "__default__profile__",
             "file:///home/jay/.config/hypr/hyprland": "__default__profile__",
             "file:///home/jay/.config/hypr": "__default__profile__",
-            "file:///home/jay/.scripts": "__default__profile__"
+            "file:///home/jay/.scripts": "__default__profile__",
+            "file:///home/jay/.config/fish": "__default__profile__",
+            "file:///home/jay/.config": "__default__profile__",
+            "file:///home/jay/tmptasks/gitsave/config": "__default__profile__",
+            "file:///home/jay/tmptasks/experiment/shell": "__default__profile__",
+            "file:///etc/xdg/quickshell/caelestia": "__default__profile__",
+            "file:///usr/lib/python3.13/site-packages/caelestia": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -46,15 +56,15 @@
             "titleBarHeight": 35,
             "activityBarWidth": 48,
             "sideBarWidth": 186,
-            "auxiliaryBarWidth": 186,
+            "auxiliaryBarWidth": 458,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/.scripts",
-            "backupPath": "/home/jay/.config/Code/Backups/e6518b8d769fa28594da7c9072377544",
+            "folder": "file:///usr/lib/python3.13/site-packages/caelestia",
+            "backupPath": "/home/jay/.config/Code/Backups/4e25cbb506029d403c5c10eed296dfa3",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -68,7 +78,7 @@
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
             "sideBarWidth": 186,
-            "auxiliaryBarWidth": 186,
+            "auxiliaryBarWidth": 458,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
@@ -87,6 +97,30 @@
                     "auxiliaryBarVisible": true
                 },
                 "0e651a4e3506eab531de3c8b27a87e62": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "4ca07bd18c9ec0f66996a4cc79a57d0d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "be4275f3ed8d77b9fe37fed5e669e8fc": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "d4e3f10509f32eefe11c20f1ba4aa649": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": true
+                },
+                "6618affc4f2cfeb2283b99250e50d662": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "423556e02a4f0039d5386817cd98c021": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "44e1bf249446a8ed9157a2c1367a50c8": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }

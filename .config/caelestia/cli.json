@@ -1,0 +1,5 @@
+{
+  "wallpaper": {
+    "postHook": "swww img \"$WALLPAPER_PATH\""
+  }
+}

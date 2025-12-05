@@ -8,7 +8,7 @@ if status is-interactive
 
     # Better ls
     alias ls='eza --icons --group-directories-first -1'
-
+    alias gitbackup="~/.scripts/gitpush.sh"
     # Abbrs
     abbr gd 'git diff'
     abbr ga 'git add .'
