@@ -4,12 +4,12 @@
     "telemetry.devDeviceId": "44bc912f-4a97-4931-8a98-89f1ea12c4e5",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
+        "folders": [],
+        "emptyWindows": [
             {
-                "folderUri": "file:///home/jay"
+                "backupFolder": "1765043352829"
             }
-        ],
-        "emptyWindows": []
+        ]
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -26,9 +26,12 @@
             "file:///usr/lib/python3.13/site-packages/caelestia": "__default__profile__",
             "file:///home/jay/.config/variety": "__default__profile__",
             "file:///home/jay/tmptasks/experiment/new": "__default__profile__",
-            "file:///home/jay": "__default__profile__"
+            "file:///home/jay": "__default__profile__",
+            "file:///home/jay/tmptasks/gitsave/config/.config/fish": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1765043352829": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
     "themeBackground": "#011627",
@@ -53,30 +56,29 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 231,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay",
-            "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
+            "backupPath": "/home/jay/.config/Code/Backups/1765043352829",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 1600,
-                "height": 1000
+                "width": 770,
+                "height": 988
             }
         },
         "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 231,
+            "sideBarWidth": 187,
+            "auxiliaryBarWidth": 187,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
@@ -127,6 +129,10 @@
                     "auxiliaryBarVisible": false
                 },
                 "aca5a99f573256674d0c2d020ba70957": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "2ce8de9cd375d70368e341b43970acd6": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }
