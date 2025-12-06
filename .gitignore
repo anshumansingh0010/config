@@ -2,8 +2,16 @@
 .config/Code
 .config/Code - OSS
 .config/variety/Downloaded
+.config/JetBrains/*
+.config/BraveSoftware/*
+.config/Google/Chrome/Default/Extensions/*
+.config/Google/Chrome/Profile/Extensions/*
+.config/Antigravity/*
+.config/variety/pluginconfig/CustomRedditDownloader/credentials.conf
+.config/Antigravity/User/globalStorage/state.vscdb
 .vscode/extensions
 .vscode/workspaceStorage
+
 .idea/
 *.log
 *.tmp

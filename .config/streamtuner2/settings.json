@@ -1,0 +1,45 @@
+{
+    "auto_save_appstate": 1,
+    "auto_save_stations": 0,
+    "datadir": "/home/jay/.cache/streamtuner2",
+    "debug": 0,
+    "dir": "/home/jay/.config/streamtuner2",
+    "google_homepage": 0,
+    "heuristic_bookmark_update": 0,
+    "internetradio_max_pages": 5,
+    "load_favicon": 1,
+    "max_streams": 500,
+    "nothreads": 0,
+    "open_mode": "rt",
+    "play": {
+        "audio/*": "xdg-open",
+        "audio/mpeg": "xdg-open",
+        "audio/ogg": "xdg-open",
+        "url/http": "xdg-open",
+        "video/*": "vlc",
+        "video/youtube": "xdg-open $(youtube-dl -g %srv)"
+    },
+    "playlist_asis": 0,
+    "plugins": {
+        "bookmarks": 1,
+        "configwin": 1,
+        "search": 1,
+        "streamedit": 1
+    },
+    "pyquery": 1,
+    "record": {
+        "audio/*": "xdg-open",
+        "video/youtube": "xdg-open"
+    },
+    "retain_deleted": 0,
+    "reuse_m3u": 1,
+    "searchbtn": 0,
+    "share": "/usr/share/streamtuner2",
+    "show_bookmarks": 1,
+    "show_favicons": 1,
+    "specbuttons": {},
+    "status_color": "#ffeecc",
+    "tmp": "/tmp/streamtuner2",
+    "window_title": 0,
+    "windows": false
+}

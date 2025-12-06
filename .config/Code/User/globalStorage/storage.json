@@ -6,15 +6,24 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///usr/lib/python3.13/site-packages/caelestia"
+                "folderUri": "file:///home/jay/.config/variety"
             },
             {
-                "folderUri": "file:///home/jay/.config/variety"
+                "folderUri": "file:///home/jay/.config"
+            },
+            {
+                "folderUri": "file:///home/jay"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1764941718903"
+                "backupFolder": "1765003101698"
+            },
+            {
+                "backupFolder": "1765003248173"
+            },
+            {
+                "backupFolder": "1765003252684"
             }
         ]
     },
@@ -31,9 +40,15 @@
             "file:///home/jay/tmptasks/experiment/shell": "__default__profile__",
             "file:///etc/xdg/quickshell/caelestia": "__default__profile__",
             "file:///usr/lib/python3.13/site-packages/caelestia": "__default__profile__",
-            "file:///home/jay/.config/variety": "__default__profile__"
+            "file:///home/jay/.config/variety": "__default__profile__",
+            "file:///home/jay/tmptasks/experiment/new": "__default__profile__",
+            "file:///home/jay": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1765003101698": "__default__profile__",
+            "1765003248173": "__default__profile__",
+            "1765003252684": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
     "themeBackground": "#1f1f1f",
@@ -59,53 +74,30 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 186,
-            "auxiliaryBarWidth": 186,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 231,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///usr/lib/python3.13/site-packages/caelestia",
-            "backupPath": "/home/jay/.config/Code/Backups/4e25cbb506029d403c5c10eed296dfa3",
+            "folder": "file:///home/jay",
+            "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 765,
-                "height": 980
+                "width": 1600,
+                "height": 1000
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///usr/lib/python3.13/site-packages/caelestia",
-                "backupPath": "/home/jay/.config/Code/Backups/4e25cbb506029d403c5c10eed296dfa3",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 765,
-                    "height": 980
-                }
-            },
-            {
-                "folder": "file:///home/jay/.config/variety",
-                "backupPath": "/home/jay/.config/Code/Backups/67b15db32c04c3f07515a47b2bfc119c",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 765,
-                    "height": 980
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 186,
-            "auxiliaryBarWidth": 186,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 231,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
@@ -135,10 +127,6 @@
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 },
-                "d4e3f10509f32eefe11c20f1ba4aa649": {
-                    "sideBarVisible": false,
-                    "auxiliaryBarVisible": true
-                },
                 "6618affc4f2cfeb2283b99250e50d662": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
@@ -152,6 +140,14 @@
                     "auxiliaryBarVisible": true
                 },
                 "3757b112665855507bd972a33b654c58": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "7954cc764807d1e290741d52612caf2c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "aca5a99f573256674d0c2d020ba70957": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }
