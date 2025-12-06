@@ -1,7 +1,7 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
-    "telemetry.devDeviceId": "4c381621-9d57-452c-b89f-51959b5fb48d",
+    "telemetry.devDeviceId": "560e9681-42c9-47e9-9cf1-ba032152e0e5",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
@@ -9,11 +9,7 @@
                 "folderUri": "file:///home/jay"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1765007439639"
-            }
-        ]
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "profileAssociations": {

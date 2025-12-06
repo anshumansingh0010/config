@@ -9,7 +9,6 @@ CATEGORY="$1"
 CACHE_DIR="$HOME/.cache/auto-music"
 mkdir -p "$CACHE_DIR"
 HISTORY="$CACHE_DIR/${CATEGORY}.history"
-rm -rf "$HISTORY"
 touch "$HISTORY"
  
 echo "Starting fast music for category: $CATEGORY"
