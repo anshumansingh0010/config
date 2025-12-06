@@ -3,51 +3,51 @@
 # Colors must be specified as 6-digit hex values without # prefix
 
 # Background colors
-background = #1a110e
-selected_bg = #271e1a
-header_bg = #53433e
+background = #11140f
+selected_bg = #1d211b
+header_bg = #43483f
 
 # Text colors
-text = #f1dfd9
-selected_text = #ffb597
-header_text = #d8c2ba
-inactive_text = #a08d86
+text = #e1e4da
+selected_text = #a4d396
+header_text = #c3c8bc
+inactive_text = #8d9387
 
 # GPU utilization colors (gradient from low to high)
-gpu_util_low = #ffd9b9
-gpu_util_med = #ffeee5
-gpu_util_high = #ff997d
+gpu_util_low = #b6efa8
+gpu_util_med = #e6f7cd
+gpu_util_high = #c5b542
 
 # Memory usage colors
-memory_low = #ffdb94
-memory_med = #f2b2f2
-memory_high = #ffa2bd
+memory_low = #b6edba
+memory_med = #89d8a8
+memory_high = #6ecfa5
 
 # Temperature colors (cool to hot)
-temp_cool = #ffd9b9
-temp_warm = #ffeee5
-temp_hot = #ff997d
+temp_cool = #b6efa8
+temp_warm = #e6f7cd
+temp_hot = #c5b542
 
 # Power usage colors
-power_low = #ffd9b9
-power_med = #ffbfa3
-power_high = #f9ab95
+power_low = #b6efa8
+power_med = #c3d591
+power_high = #c6c177
 
 # Process list colors
-process_normal = #f1dfd9
-process_highlight = #ffb597
-process_killed = #ff997d
+process_normal = #e1e4da
+process_highlight = #a4d396
+process_killed = #c5b542
 
 # Border and separator colors
-border = #a08d86
-separator = #53433e
+border = #8d9387
+separator = #43483f
 
 # Chart and graph colors
-chart_line = #d3c78f
-chart_fill = #271e1a
+chart_line = #a0cfd2
+chart_fill = #1d211b
 
 # Status indicators
-status_ok = #ffd9b9
-status_warning = #ffeee5
-status_error = #ff997d
-status_info = #ffa2bd
+status_ok = #b6efa8
+status_warning = #e6f7cd
+status_error = #c5b542
+status_info = #6ecfa5

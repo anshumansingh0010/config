@@ -1,5 +1,4 @@
 #!/bin/bash
-pkill mpvpaper
 VIDEO_FILE="$1"
 TIMESTAMP="${2:-3}"
 OUTPUT_DIR="${HOME}/Pictures/wallpapersmpvpaper"
@@ -20,8 +19,9 @@ mpv --no-audio \
 SCREENSHOT=$(ls -t "$OUTPUT_DIR"/*.png 2>/dev/null | head -n1)
 mv "$SCREENSHOT" "$OUTPUT_FILE"
 
+echo "old mpvpaper..."
+pkill mpvpaper
+echo "Starting mpvpaper..."
+mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio input-ipc-server=/tmp/mpv-socket" eDP-1 "$VIDEO_FILE" &
 echo "Setting wallpaper with celestia..."
 caelestia wallpaper -f "$OUTPUT_FILE"
-
-echo "Starting mpvpaper..."
-mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio" eDP-1 "$VIDEO_FILE" &
