@@ -2,6 +2,7 @@
 Target_dirs=(
     "/home/jay/tmptasks/imgCache"
     "~/.config/variety/Downloaded/"
+    "~/.cache"
 )
 
 for TARGET_DIR in "${Target_dirs[@]}"; do
