@@ -63,3 +63,5 @@ fi
 
 echo "Setting wallpaper with caelestia..."
 caelestia wallpaper -f "$OUTPUT_FILE"
+sleep 2
+hyprctl dispatch exec  pkill awww-daemon

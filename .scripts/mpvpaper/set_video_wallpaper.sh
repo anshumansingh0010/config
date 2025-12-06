@@ -19,9 +19,13 @@ mpv --no-audio \
 SCREENSHOT=$(ls -t "$OUTPUT_DIR"/*.png 2>/dev/null | head -n1)
 mv "$SCREENSHOT" "$OUTPUT_FILE"
 
-echo "old mpvpaper..."
-pkill mpvpaper
-echo "Starting mpvpaper..."
-mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio input-ipc-server=/tmp/mpv-socket" eDP-1 "$VIDEO_FILE" &
-echo "Setting wallpaper with celestia..."
+if [[ -S /tmp/mpv-socket ]]; then
+    echo "mpvpaper already running, changing video..."
+    echo "loadfile \"$VIDEO_FILE\" replace" | socat - /tmp/mpv-socket
+else
+    echo "Starting mpvpaper..."
+    mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=/tmp/mpv-socket" eDP-1 "$VIDEO_FILE" &
+fiecho "Setting wallpaper with celestia..."
 caelestia wallpaper -f "$OUTPUT_FILE"
+sleep 2
+hyprctl dispatch exec  pkill awww-daemon
