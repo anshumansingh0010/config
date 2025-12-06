@@ -1,5 +1,5 @@
 {
   "wallpaper": {
-    "postHook": ".scripts/mpvpaper/postprocess.sh \"$WALLPAPER_PATH\""
+    "postHook": ".scripts/mpvpaper/postprocess.sh $WALLPAPER_PATH"
   }
 }
