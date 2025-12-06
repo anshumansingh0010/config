@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pkill mpvpaper
 VIDEO_FILE="$1"
 TIMESTAMP="${2:-3}"
 OUTPUT_DIR="${HOME}/Pictures/wallpapersmpvpaper"

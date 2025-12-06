@@ -1,4 +1,4 @@
 {
-    "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Night Owl"
+    "workbench.colorTheme": "Night Owl",
+    "files.autoSave": "afterDelay"
 }

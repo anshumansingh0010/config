@@ -54,6 +54,19 @@
                 ],
                 "enabled": true,
                 "dangerous": false
+            },{
+                "name":"live wallpaper",
+                "description":"change live wallpaper",
+                "icon":"wallet",
+                "command": [
+                    "hyprctl",
+                    "dispatch",
+                    "exec",
+                    "~/.scripts/mpvpaper/set_video_wallpaper_playlist.sh",
+                    "https://www.youtube.com/playlist?list=PLm6P5omtoDSCpc82qR8R5Tj-IpythzGey&jct=MnQbNkECFbT7W4RxTYRnog"
+                ],
+                "enabled": true,
+                "dangerous": false
             },
             {
                 "name": "Run Radio",
