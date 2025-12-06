@@ -4,7 +4,11 @@
     "telemetry.devDeviceId": "44bc912f-4a97-4931-8a98-89f1ea12c4e5",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/jay/.scripts/mpvpaper"
+            }
+        ],
         "emptyWindows": [
             {
                 "backupFolder": "1765043352829"
@@ -27,11 +31,10 @@
             "file:///home/jay/.config/variety": "__default__profile__",
             "file:///home/jay/tmptasks/experiment/new": "__default__profile__",
             "file:///home/jay": "__default__profile__",
-            "file:///home/jay/tmptasks/gitsave/config/.config/fish": "__default__profile__"
+            "file:///home/jay/tmptasks/gitsave/config/.config/fish": "__default__profile__",
+            "file:///home/jay/.scripts/mpvpaper": "__default__profile__"
         },
-        "emptyWindows": {
-            "1765043352829": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "theme": "vs-dark",
     "themeBackground": "#011627",
@@ -56,21 +59,22 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
-            "auxiliaryBarWidth": 0,
+            "sideBarWidth": 187,
+            "auxiliaryBarWidth": 187,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/jay/.config/Code/Backups/1765043352829",
+            "folder": "file:///home/jay/.scripts/mpvpaper",
+            "backupPath": "/home/jay/.config/Code/Backups/85ca9a04c8f9e133401cf08543c33129",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 770,
-                "height": 988
+                "width": 1600,
+                "height": 1000
             }
         },
         "openedWindows": []
@@ -133,6 +137,10 @@
                     "auxiliaryBarVisible": true
                 },
                 "2ce8de9cd375d70368e341b43970acd6": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "d0851c3496edab6099df16990b00f5a6": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }

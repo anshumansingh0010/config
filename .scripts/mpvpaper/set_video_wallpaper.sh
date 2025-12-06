@@ -26,7 +26,7 @@ else
     echo "Starting mpvpaper..."
     mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=/tmp/mpv-socket" eDP-1 "$VIDEO_FILE" &
 fi    
-fiecho "Setting wallpaper with celestia..."
+echo "Setting wallpaper with celestia..."
 caelestia wallpaper -f "$OUTPUT_FILE"
 sleep 2
 hyprctl dispatch exec  pkill awww-daemon
@@ -39,6 +39,7 @@ else
     pkill mpvpaper
     echo "Starting mpvpaper..."
     mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=$SOCKET_PATH" eDP-1 "$OUTPUT_FILE" &
+    sleep 2
 fi
 
 
