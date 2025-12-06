@@ -11362,3 +11362,806 @@ ERROR: 2025-12-06 12:28:56,750: _get_oauth_token() 'No access token in response'
 INFO: 2025-12-06 12:28:56,752: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
 INFO: 2025-12-06 12:28:56,753: list_files() 'More than 1 files in the folders, stop listing'
 INFO: 2025-12-06 12:28:56,754: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqemd.png to unseen_downloads'
+INFO: 2025-12-06 13:18:24,158: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:18:24,162: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqzr9.jpg'
+INFO: 2025-12-06 13:18:24,162: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:18:24,164: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqzr9.jpg, time: 1765007304.1646314'
+INFO: 2025-12-06 13:18:24,165: build_imagemagick_filter_cmd() 'Applying filter: -paint 8'
+INFO: 2025-12-06 13:18:24,165: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqzr9.jpg -scale 3200x2000^ -paint 8 /home/jay/.config/variety/wallpaper/wallpaper-filter-3462c1e4c54c4998126073a10a738a9c.jpg'
+INFO: 2025-12-06 13:18:26,163: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:18:26,164: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:18:26,164: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:18:26,165: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:18:26,165: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:18:26,165: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:18:26,165: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:18:26,165: download_one() 'Wallhaven.cc: Queue size: 3'
+INFO: 2025-12-06 13:18:26,165: download_one() 'Wallhaven.cc: Queue populated with 3 URLs'
+INFO: 2025-12-06 13:18:26,165: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/poo9ze'
+INFO: 2025-12-06 13:18:27,461: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/po/wallhaven-poo9ze.png'
+INFO: 2025-12-06 13:18:27,463: save_locally() 'Origin URL: https://wallhaven.cc/w/poo9ze'
+INFO: 2025-12-06 13:18:27,463: save_locally() 'Image URL: https://w.wallhaven.cc/full/po/wallhaven-poo9ze.png'
+INFO: 2025-12-06 13:18:27,463: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-poo9ze.png'
+INFO: 2025-12-06 13:18:28,905: save_locally() 'Download complete'
+INFO: 2025-12-06 13:18:28,908: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/i4rgl7cum62g1.png'
+INFO: 2025-12-06 13:18:28,910: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:18:29,583: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqzr9.jpg'
+INFO: 2025-12-06 13:18:29,587: list_files() 'More than 1 files in the folders, stop listing'
+ERROR: 2025-12-06 13:18:29,648: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:18:29,650: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:18:29,650: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:18:29,650: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-poo9ze.png to unseen_downloads'
+INFO: 2025-12-06 13:20:03,752: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:20:03,756: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/snpxj493p02g1.jpg'
+INFO: 2025-12-06 13:20:03,757: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:20:03,758: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/snpxj493p02g1.jpg, time: 1765007403.7586262'
+INFO: 2025-12-06 13:20:03,759: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-06 13:20:03,759: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/snpxj493p02g1.jpg -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-2496cbbcfbc2ebdb9cab45f67d80f724.jpg'
+INFO: 2025-12-06 13:20:04,606: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/snpxj493p02g1.jpg'
+INFO: 2025-12-06 13:20:04,609: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:20:05,757: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:20:05,758: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:20:05,758: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:20:05,759: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:20:05,759: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:20:05,759: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:20:05,759: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:20:05,759: download_one() 'Reddit: Queue size: 106'
+INFO: 2025-12-06 13:20:05,759: download_one() 'Reddit: Queue populated with 106 URLs'
+INFO: 2025-12-06 13:20:05,759: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1p2p1ir/doctor_who_1920x1080/'
+INFO: 2025-12-06 13:20:05,759: save_locally() 'Image URL: https://i.redd.it/s9h5hyt8dj2g1.png'
+INFO: 2025-12-06 13:20:05,759: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png'
+ERROR: 2025-12-06 13:20:10,330: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:20:10,331: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:20:10,332: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:20:10,336: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:20:10,340: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png'
+INFO: 2025-12-06 13:20:10,340: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:20:10,344: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png, time: 1765007410.344548'
+INFO: 2025-12-06 13:20:10,345: build_imagemagick_filter_cmd() 'Applying filter: -spread 10 -noise 3'
+INFO: 2025-12-06 13:20:10,345: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png -scale 3200x2000^ -spread 10 -noise 3 /home/jay/.config/variety/wallpaper/wallpaper-filter-a5f629e6df97cb65f432fb807c6262aa.jpg'
+INFO: 2025-12-06 13:20:11,714: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png'
+INFO: 2025-12-06 13:20:11,716: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:20:12,312: save_locally() 'Download complete'
+INFO: 2025-12-06 13:20:12,314: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png'
+INFO: 2025-12-06 13:20:12,316: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:20:12,342: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:20:12,344: trigger_download() 'Triggering download thread to check if download needed and possible'
+ERROR: 2025-12-06 13:20:12,411: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:20:12,414: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:20:12,414: list_files() 'More than 1 files in the folders, stop listing'
+ERROR: 2025-12-06 13:20:12,984: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:20:12,986: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:20:12,987: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:20:12,987: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png to unseen_downloads'
+INFO: 2025-12-06 13:20:13,988: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:20:13,989: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:20:13,989: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:20:13,989: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:20:13,989: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:20:13,989: download_one() 'Reddit: Queue size: 105'
+INFO: 2025-12-06 13:20:13,989: download_one() 'Reddit: Queue populated with 105 URLs'
+INFO: 2025-12-06 13:20:13,989: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1p0bx6t/batman_ben_affleck_4096x2160/'
+INFO: 2025-12-06 13:20:13,989: save_locally() 'Image URL: https://preview.redd.it/lrd0zw83p02g1.jpg?width=4096&format=pjpg&auto=webp&s=33fcb3e052fd21b389a29d4b426f716063db01f3'
+INFO: 2025-12-06 13:20:13,989: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/lrd0zw83p02g1.jpg'
+INFO: 2025-12-06 13:20:14,768: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:20:14,771: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrr35.jpg'
+INFO: 2025-12-06 13:20:14,771: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:20:14,772: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrr35.jpg, time: 1765007414.7727854'
+INFO: 2025-12-06 13:20:14,773: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-06 13:20:14,773: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrr35.jpg -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-ec248bda2097b8025c257d54d13bb888.jpg'
+INFO: 2025-12-06 13:20:15,675: save_locally() 'Download complete'
+INFO: 2025-12-06 13:20:15,676: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/x5mov34b3y1g1.png'
+INFO: 2025-12-06 13:20:15,677: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:20:15,731: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrr35.jpg'
+INFO: 2025-12-06 13:20:15,733: list_files() 'More than 1 files in the folders, stop listing'
+ERROR: 2025-12-06 13:20:16,468: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:20:16,469: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:20:16,470: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:20:16,470: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/lrd0zw83p02g1.jpg to unseen_downloads'
+INFO: 2025-12-06 13:20:16,772: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:20:16,772: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:20:17,474: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:20:17,475: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:20:17,475: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:20:17,475: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:20:17,475: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:20:17,475: download_one() 'Wallhaven.cc: Queue size: 2'
+INFO: 2025-12-06 13:20:17,475: download_one() 'Wallhaven.cc: Queue populated with 2 URLs'
+INFO: 2025-12-06 13:20:17,475: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/gwwqvq'
+INFO: 2025-12-06 13:20:18,509: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/gw/wallhaven-gwwqvq.jpg'
+INFO: 2025-12-06 13:20:18,510: save_locally() 'Origin URL: https://wallhaven.cc/w/gwwqvq'
+INFO: 2025-12-06 13:20:18,510: save_locally() 'Image URL: https://w.wallhaven.cc/full/gw/wallhaven-gwwqvq.jpg'
+INFO: 2025-12-06 13:20:18,510: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gwwqvq.jpg'
+INFO: 2025-12-06 13:20:23,482: save_locally() 'Download complete'
+INFO: 2025-12-06 13:20:23,483: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrrr35.jpg'
+INFO: 2025-12-06 13:20:23,485: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:20:23,485: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gwwqvq.jpg to unseen_downloads'
+INFO: 2025-12-06 13:22:28,813: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:22:28,816: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w555rq.jpg'
+INFO: 2025-12-06 13:22:28,816: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:22:28,818: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w555rq.jpg, time: 1765007548.8181465'
+INFO: 2025-12-06 13:22:28,818: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-06 13:22:28,818: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w555rq.jpg -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-040157420ae7d2cf4451c6a84b38e960.jpg'
+INFO: 2025-12-06 13:22:30,193: apply_display_mode() 'ImageMagick display mode cmd: convert /home/jay/.config/variety/wallpaper/wallpaper-filter-040157420ae7d2cf4451c6a84b38e960.jpg -resize 3200x2000^ -gravity center -extent 3200x2000 -scale 10% -blur 0x3 -resize 1000% -clone 0 -resize 3200x2000 -size 3200x2000 -gravity center -composite /home/jay/.config/variety/wallpaper/wallpaper-zoomed-9043d4d7377b5e48f9893be32174493d.jpg'
+INFO: 2025-12-06 13:22:30,817: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:30,817: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:30,818: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:22:30,818: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:22:30,818: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:22:30,818: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:22:30,818: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:22:30,818: download_one() 'Wallhaven.cc: Queue size: 1'
+INFO: 2025-12-06 13:22:30,819: download_one() 'Wallhaven.cc: Queue populated with 1 URLs'
+INFO: 2025-12-06 13:22:30,819: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/k888gm'
+INFO: 2025-12-06 13:22:30,948: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-w555rq.jpg'
+INFO: 2025-12-06 13:22:30,950: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:22:35,073: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:22:35,077: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqemd.png'
+INFO: 2025-12-06 13:22:35,077: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:22:35,079: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqemd.png, time: 1765007555.0795233'
+INFO: 2025-12-06 13:22:35,080: build_imagemagick_filter_cmd() 'Applying filter: -scale 20% -blur 0x2 -resize 500%'
+INFO: 2025-12-06 13:22:35,080: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqemd.png -scale 3200x2000^ -scale 20% -blur 0x2 -resize 500% /home/jay/.config/variety/wallpaper/wallpaper-filter-91218b01a5d601de06bb76dfc23a7aaa.jpg'
+INFO: 2025-12-06 13:22:35,434: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/k8/wallhaven-k888gm.jpg'
+INFO: 2025-12-06 13:22:35,435: save_locally() 'Origin URL: https://wallhaven.cc/w/k888gm'
+INFO: 2025-12-06 13:22:35,436: save_locally() 'Image URL: https://w.wallhaven.cc/full/k8/wallhaven-k888gm.jpg'
+INFO: 2025-12-06 13:22:35,436: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-k888gm.jpg'
+INFO: 2025-12-06 13:22:36,433: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-yqqemd.png'
+INFO: 2025-12-06 13:22:36,438: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:22:37,078: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:37,079: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:40,759: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:22:40,763: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png'
+INFO: 2025-12-06 13:22:40,763: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:22:40,765: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png, time: 1765007560.7651026'
+INFO: 2025-12-06 13:22:40,765: build_imagemagick_filter_cmd() 'Applying filter: -type Grayscale'
+INFO: 2025-12-06 13:22:40,765: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png -scale 3200x2000^ -type Grayscale /home/jay/.config/variety/wallpaper/wallpaper-filter-fecaaa141769015d5c619a48a1498017.jpg'
+INFO: 2025-12-06 13:22:41,164: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s9h5hyt8dj2g1.png'
+INFO: 2025-12-06 13:22:41,166: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+INFO: 2025-12-06 13:22:42,764: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:42,764: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:22:50,289: save_locally() 'Download failed from image URL: https://w.wallhaven.cc/full/k8/wallhaven-k888gm.jpg (source location: https://wallhaven.cc/toplist) '
+ERROR: 2025-12-06 13:22:50,289: safe_unlink() 'Could not delete /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-k888gm.jpg.partial, ignoring'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='w.wallhaven.cc', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+        image_url, stream=True, headers=request_headers, **(request_kwargs or {})
+    )
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='w.wallhaven.cc', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 910, in safe_unlink
+    os.unlink(filepath)
+    ~~~~~~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-k888gm.jpg.partial'
+ERROR: 2025-12-06 13:22:50,295: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='w.wallhaven.cc', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/VarietyWindow.py", line 1166, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 153, in download_one
+    return self.download_queue_item(queue_item)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py", line 112, in download_queue_item
+    return self.legacy_downloader.download_queue_item(queue_item)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py", line 112, in download_queue_item
+    return self.save_locally(wallpaper_url, src_url, extra_metadata=extra_metadata)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 244, in save_locally
+    raise e
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+        image_url, stream=True, headers=request_headers, **(request_kwargs or {})
+    )
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='w.wallhaven.cc', port=443): Read timed out. (read timeout=5)
+INFO: 2025-12-06 13:22:51,300: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:22:51,300: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:22:51,300: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:22:51,300: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:22:51,300: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:22:51,300: download_one() 'Reddit: Queue size: 104'
+INFO: 2025-12-06 13:22:51,300: download_one() 'Reddit: Queue populated with 104 URLs'
+INFO: 2025-12-06 13:22:51,301: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1p3r72b/4232x2688_arch_wall_hi_res/'
+INFO: 2025-12-06 13:22:51,301: save_locally() 'Image URL: https://preview.redd.it/wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef'
+INFO: 2025-12-06 13:22:51,301: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/wkz8o2gips2g1.png'
+INFO: 2025-12-06 13:23:11,326: save_locally() 'Download failed from image URL: https://preview.redd.it/wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef (source location: https://www.reddit.com/r/wallpapers/hot/) '
+ERROR: 2025-12-06 13:23:11,326: safe_unlink() 'Could not delete /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/wkz8o2gips2g1.png.partial, ignoring'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='preview.redd.it', port=443): Max retries exceeded with url: /wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+        image_url, stream=True, headers=request_headers, **(request_kwargs or {})
+    )
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='preview.redd.it', port=443): Max retries exceeded with url: /wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 910, in safe_unlink
+    os.unlink(filepath)
+    ~~~~~~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/wkz8o2gips2g1.png.partial'
+ERROR: 2025-12-06 13:23:11,332: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/usr/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='preview.redd.it', port=443): Max retries exceeded with url: /wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/VarietyWindow.py", line 1166, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 153, in download_one
+    return self.download_queue_item(queue_item)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 107, in download_queue_item
+    return self.save_locally(origin_url, image_url, extra_metadata=extra_metadata)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 244, in save_locally
+    raise e
+  File "/usr/lib/python3.13/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 233, in save_locally
+    r = Util.request(
+        image_url, stream=True, headers=request_headers, **(request_kwargs or {})
+    )
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+        method=method,
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "/usr/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.13/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='preview.redd.it', port=443): Max retries exceeded with url: /wkz8o2gips2g1.png?width=4232&format=png&auto=webp&s=425f7094c4c9ff0f2f06661742739e25394eddef (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2d6a497ed0>: Failed to resolve 'preview.redd.it' ([Errno -3] Temporary failure in name resolution)"))
+ERROR: 2025-12-06 13:23:15,290: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:23:15,292: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:23:15,293: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:15,300: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:15,303: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:15,305: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjm3v.jpg'
+INFO: 2025-12-06 13:23:15,306: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:23:15,307: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjm3v.jpg, time: 1765007595.3078084'
+INFO: 2025-12-06 13:23:15,308: build_imagemagick_filter_cmd() 'Applying filter: -scale 20% -blur 0x2 -resize 500%'
+INFO: 2025-12-06 13:23:15,308: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjm3v.jpg -scale 3200x2000^ -scale 20% -blur 0x2 -resize 500% /home/jay/.config/variety/wallpaper/wallpaper-filter-64f30cdb64d5a899b1de4e249df81aa3.jpg'
+INFO: 2025-12-06 13:23:15,309: process_command() 'Received command: ['--preferences']'
+INFO: 2025-12-06 13:23:15,312: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jt0j5ii2y45g1.png'
+INFO: 2025-12-06 13:23:15,312: prepare_thread() 'Prepared buffer contains 55 images'
+INFO: 2025-12-06 13:23:15,317: reload() 'Reloading preferences dialog'
+ERROR: 2025-12-06 13:23:15,317: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 818, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+ERROR: 2025-12-06 13:23:15,319: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 818, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+ERROR: 2025-12-06 13:23:15,322: get_xdg_pictures_folder() 'Could not get path to Pictures folder. Defaulting to ~/Pictures.'
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/variety/Util.py", line 818, in get_xdg_pictures_folder
+    raise Exception("Could not get path to Pictures folder. Defaulting to ~/Pictures.")
+Exception: Could not get path to Pictures folder. Defaulting to ~/Pictures.
+INFO: 2025-12-06 13:23:16,308: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jt0j5ii2y45g1.png, time: 1765007596.30882'
+INFO: 2025-12-06 13:23:16,889: apply_display_mode() 'ImageMagick display mode cmd: convert /home/jay/.config/variety/wallpaper/wallpaper-filter-64f30cdb64d5a899b1de4e249df81aa3.jpg -resize 3200x2000^ -gravity center -extent 3200x2000 -scale 10% -blur 0x3 -resize 1000% -clone 0 -resize 3200x2000 -size 3200x2000 -gravity center -composite /home/jay/.config/variety/wallpaper/wallpaper-zoomed-6a8c7ae4e2c2e793cd2a2de253474c1f.jpg'
+INFO: 2025-12-06 13:23:17,307: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:17,308: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:17,313: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:17,314: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:17,617: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jjm3v.jpg'
+INFO: 2025-12-06 13:23:17,620: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:18,334: build_imagemagick_filter_cmd() 'Applying filter: -type Grayscale'
+INFO: 2025-12-06 13:23:18,335: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jt0j5ii2y45g1.png -scale 3200x2000^ -type Grayscale /home/jay/.config/variety/wallpaper/wallpaper-filter-937fe568950943888aec0319a3524bbe.jpg'
+INFO: 2025-12-06 13:23:18,712: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jt0j5ii2y45g1.png'
+INFO: 2025-12-06 13:23:18,714: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:23:19,418: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:23:19,421: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:23:19,422: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:29,511: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:29,514: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jee15p.png'
+INFO: 2025-12-06 13:23:29,514: prepare_thread() 'Prepared buffer contains 54 images'
+INFO: 2025-12-06 13:23:29,516: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jee15p.png, time: 1765007609.516349'
+INFO: 2025-12-06 13:23:29,516: build_imagemagick_filter_cmd() 'Applying filter: -scale 20% -blur 0x10 -resize 500%'
+INFO: 2025-12-06 13:23:29,516: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jee15p.png -scale 3200x2000^ -scale 20% -blur 0x10 -resize 500% /home/jay/.config/variety/wallpaper/wallpaper-filter-64f0c83d60736c5fc059290db2f8d929.jpg'
+INFO: 2025-12-06 13:23:30,908: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-jee15p.png'
+INFO: 2025-12-06 13:23:30,911: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:31,515: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:31,516: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:38,261: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:38,264: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png'
+INFO: 2025-12-06 13:23:38,264: prepare_thread() 'Prepared buffer contains 54 images'
+INFO: 2025-12-06 13:23:38,266: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png, time: 1765007618.2662132'
+INFO: 2025-12-06 13:23:38,266: build_imagemagick_filter_cmd() 'Applying filter: -spread 10 -noise 3'
+INFO: 2025-12-06 13:23:38,266: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png -scale 3200x2000^ -spread 10 -noise 3 /home/jay/.config/variety/wallpaper/wallpaper-filter-202a947a49acf0a0ed191de2ef13ec2a.jpg'
+INFO: 2025-12-06 13:23:39,830: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png'
+INFO: 2025-12-06 13:23:39,833: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:40,265: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:40,265: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:43,978: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:43,982: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/imj6c1u51p3g1.png'
+INFO: 2025-12-06 13:23:43,982: prepare_thread() 'Prepared buffer contains 54 images'
+INFO: 2025-12-06 13:23:43,983: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/imj6c1u51p3g1.png, time: 1765007623.9836862'
+INFO: 2025-12-06 13:23:43,984: build_imagemagick_filter_cmd() 'Applying filter: -paint 8'
+INFO: 2025-12-06 13:23:43,984: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/imj6c1u51p3g1.png -scale 3200x2000^ -paint 8 /home/jay/.config/variety/wallpaper/wallpaper-filter-2bf4f27ba5b4d64afde344fc6286f052.jpg'
+INFO: 2025-12-06 13:23:45,983: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:45,983: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:48,613: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/imj6c1u51p3g1.png'
+INFO: 2025-12-06 13:23:48,616: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:23:49,460: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:23:49,462: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:23:49,464: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:56,560: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:23:56,563: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png'
+INFO: 2025-12-06 13:23:56,563: prepare_thread() 'Prepared buffer contains 53 images'
+INFO: 2025-12-06 13:23:56,564: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png, time: 1765007636.564221'
+INFO: 2025-12-06 13:23:56,565: build_imagemagick_filter_cmd() 'Applying filter: -scale 3% -scale 3333%'
+INFO: 2025-12-06 13:23:56,565: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png -scale 3200x2000^ -scale 3% -scale 3333% /home/jay/.config/variety/wallpaper/wallpaper-filter-cdb468764f9cfcef6d7ce5bea21e1698.jpg'
+INFO: 2025-12-06 13:23:57,312: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-xeelxz.png'
+INFO: 2025-12-06 13:23:57,315: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:23:58,564: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:23:58,565: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:23:58,566: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:23:58,566: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:23:58,566: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:23:58,566: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:23:58,566: download_one() 'Wallhaven.cc: Queue size: 0'
+INFO: 2025-12-06 13:23:58,566: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:23:58,566: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:23:58,566: download_one() 'Wallhaven.cc: Filling queue'
+INFO: 2025-12-06 13:23:58,566: search() 'Performing wallhaven search: url=https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:24:01,050: fill_queue() '300 wallpapers in result, using page 13'
+INFO: 2025-12-06 13:24:01,050: search() 'Performing wallhaven search: url=https://wallhaven.cc/toplist?page=13'
+INFO: 2025-12-06 13:24:01,850: process_command() 'Received command: ['--next']'
+INFO: 2025-12-06 13:24:01,854: set_wallpaper() 'Calling set_wallpaper with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:24:01,854: prepare_thread() 'Prepared buffer contains 53 images'
+INFO: 2025-12-06 13:24:01,856: do_set_wp() 'Calling do_set_wp with /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg, time: 1765007641.856284'
+INFO: 2025-12-06 13:24:01,856: build_imagemagick_filter_cmd() 'Applying filter: -spread 10 -noise 3'
+INFO: 2025-12-06 13:24:01,856: build_imagemagick_filter_cmd() 'ImageMagick filter cmd: convert /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg -scale 3200x2000^ -spread 10 -noise 3 /home/jay/.config/variety/wallpaper/wallpaper-filter-87879d6bd41f577b500a138474be679c.jpg'
+INFO: 2025-12-06 13:24:01,878: download_one() 'Wallhaven.cc: Queue populated with 12 URLs'
+INFO: 2025-12-06 13:24:01,878: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/5yyj69'
+INFO: 2025-12-06 13:24:03,855: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:24:03,856: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2025-12-06 13:24:04,321: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/5y/wallhaven-5yyj69.png'
+INFO: 2025-12-06 13:24:04,322: save_locally() 'Origin URL: https://wallhaven.cc/w/5yyj69'
+INFO: 2025-12-06 13:24:04,322: save_locally() 'Image URL: https://w.wallhaven.cc/full/5y/wallhaven-5yyj69.png'
+INFO: 2025-12-06 13:24:04,322: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-5yyj69.png'
+INFO: 2025-12-06 13:24:04,599: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:24:04,601: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:24:05,435: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:24:05,437: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:24:05,439: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:24:14,817: save_locally() 'Download complete'
+INFO: 2025-12-06 13:24:14,819: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:24:14,821: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:24:15,460: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:24:15,462: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:24:15,464: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:24:15,464: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-5yyj69.png to unseen_downloads'
+INFO: 2025-12-06 13:24:16,465: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:24:16,465: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:24:16,465: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:24:16,465: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:24:16,465: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:24:16,465: download_one() 'Wallhaven.cc: Queue size: 11'
+INFO: 2025-12-06 13:24:16,465: download_one() 'Wallhaven.cc: Queue populated with 11 URLs'
+INFO: 2025-12-06 13:24:16,465: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/poo53e'
+INFO: 2025-12-06 13:24:17,330: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/po/wallhaven-poo53e.jpg'
+INFO: 2025-12-06 13:24:17,332: save_locally() 'Origin URL: https://wallhaven.cc/w/poo53e'
+INFO: 2025-12-06 13:24:17,332: save_locally() 'Image URL: https://w.wallhaven.cc/full/po/wallhaven-poo53e.jpg'
+INFO: 2025-12-06 13:24:17,332: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-poo53e.jpg'
+INFO: 2025-12-06 13:25:13,186: save_locally() 'Download complete'
+INFO: 2025-12-06 13:25:13,188: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:25:13,190: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:25:14,042: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:25:14,044: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:25:14,045: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:25:14,045: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-poo53e.jpg to unseen_downloads'
+INFO: 2025-12-06 13:25:15,046: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:25:15,047: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:25:15,047: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:25:15,047: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:25:15,047: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:25:15,047: download_one() 'Reddit: Queue size: 103'
+INFO: 2025-12-06 13:25:15,047: download_one() 'Reddit: Queue populated with 103 URLs'
+INFO: 2025-12-06 13:25:15,048: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1p04gue/5464x3072_debian_world/'
+INFO: 2025-12-06 13:25:15,048: save_locally() 'Image URL: https://preview.redd.it/um60tup1jy1g1.png?width=5464&format=png&auto=webp&s=ea5e68191e6fbfa4da031a54220b087a51c30fcf'
+INFO: 2025-12-06 13:25:15,048: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/um60tup1jy1g1.png'
+INFO: 2025-12-06 13:25:19,516: save_locally() 'Download complete'
+INFO: 2025-12-06 13:25:19,518: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:25:19,519: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:25:20,183: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:25:20,185: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:25:20,186: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:25:20,186: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/um60tup1jy1g1.png to unseen_downloads'
+INFO: 2025-12-06 13:25:21,187: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:25:21,188: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:25:21,188: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:25:21,188: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:25:21,188: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:25:21,188: download_one() 'Wallhaven.cc: Queue size: 10'
+INFO: 2025-12-06 13:25:21,188: download_one() 'Wallhaven.cc: Queue populated with 10 URLs'
+INFO: 2025-12-06 13:25:21,188: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/211986'
+INFO: 2025-12-06 13:25:23,337: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/21/wallhaven-211986.png'
+INFO: 2025-12-06 13:25:23,338: save_locally() 'Origin URL: https://wallhaven.cc/w/211986'
+INFO: 2025-12-06 13:25:23,338: save_locally() 'Image URL: https://w.wallhaven.cc/full/21/wallhaven-211986.png'
+INFO: 2025-12-06 13:25:23,338: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-211986.png'
+INFO: 2025-12-06 13:25:46,967: save_locally() 'Download complete'
+INFO: 2025-12-06 13:25:46,968: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:25:46,970: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:25:52,589: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:25:52,591: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:25:52,593: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:25:52,593: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-211986.png to unseen_downloads'
+INFO: 2025-12-06 13:25:53,594: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:25:53,594: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:25:53,595: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:25:53,595: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:25:53,595: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:25:53,595: download_one() 'Reddit: Queue size: 102'
+INFO: 2025-12-06 13:25:53,595: download_one() 'Reddit: Queue populated with 102 URLs'
+INFO: 2025-12-06 13:25:53,595: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1oqvw0b/simple_delicate_3840x2160/'
+INFO: 2025-12-06 13:25:53,595: save_locally() 'Image URL: https://preview.redd.it/s86p1j41iuzf1.jpg?width=3840&format=pjpg&auto=webp&s=785aa9dfdac156d679be6cb797b8ddcd7eb5bb27'
+INFO: 2025-12-06 13:25:53,595: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s86p1j41iuzf1.jpg'
+INFO: 2025-12-06 13:25:59,764: save_locally() 'Download complete'
+INFO: 2025-12-06 13:25:59,766: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:25:59,768: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:26:00,462: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:26:00,464: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:26:00,466: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:26:00,466: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/s86p1j41iuzf1.jpg to unseen_downloads'
+INFO: 2025-12-06 13:26:01,467: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:26:01,467: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:26:01,467: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:26:01,467: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:26:01,467: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:26:01,468: download_one() 'Wallhaven.cc: Queue size: 9'
+INFO: 2025-12-06 13:26:01,468: download_one() 'Wallhaven.cc: Queue populated with 9 URLs'
+INFO: 2025-12-06 13:26:01,468: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/3qqrp3'
+INFO: 2025-12-06 13:26:02,493: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/3q/wallhaven-3qqrp3.jpg'
+INFO: 2025-12-06 13:26:02,494: save_locally() 'Origin URL: https://wallhaven.cc/w/3qqrp3'
+INFO: 2025-12-06 13:26:02,494: save_locally() 'Image URL: https://w.wallhaven.cc/full/3q/wallhaven-3qqrp3.jpg'
+INFO: 2025-12-06 13:26:02,494: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqrp3.jpg'
+INFO: 2025-12-06 13:29:54,752: save_locally() 'Download complete'
+INFO: 2025-12-06 13:29:54,755: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:29:54,758: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:29:55,953: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:29:55,955: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:29:55,957: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:29:55,957: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-3qqrp3.jpg to unseen_downloads'
+INFO: 2025-12-06 13:29:56,958: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:29:56,958: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:29:56,959: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:29:56,959: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:29:56,959: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:29:56,959: download_one() 'Reddit: Queue size: 101'
+INFO: 2025-12-06 13:29:56,959: download_one() 'Reddit: Queue populated with 101 URLs'
+INFO: 2025-12-06 13:29:56,959: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1oqvw0b/simple_delicate_3840x2160/'
+INFO: 2025-12-06 13:29:56,959: save_locally() 'Image URL: https://preview.redd.it/3e35fkmzhuzf1.jpg?width=3840&format=pjpg&auto=webp&s=6154df88273fafed4487339fffb5a033595ddffe'
+INFO: 2025-12-06 13:29:56,959: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/3e35fkmzhuzf1.jpg'
+INFO: 2025-12-06 13:29:58,494: save_locally() 'Download complete'
+INFO: 2025-12-06 13:29:58,495: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:29:58,497: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:29:59,332: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:29:59,333: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:29:59,335: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:29:59,335: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/3e35fkmzhuzf1.jpg to unseen_downloads'
+INFO: 2025-12-06 13:30:00,336: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:30:00,336: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:30:00,336: get_throttling() 'Wallhaven.cc: parsing serverside options'
+INFO: 2025-12-06 13:30:00,337: get_throttling() 'Wallhaven.cc serverside options: {'min_fill_queue_interval': 1800, 'min_download_interval': 1800}'
+INFO: 2025-12-06 13:30:00,337: download_one() 'Wallhaven.cc: Downloading an image, config: https://wallhaven.cc/toplist'
+INFO: 2025-12-06 13:30:00,337: download_one() 'Wallhaven.cc: Queue size: 8'
+INFO: 2025-12-06 13:30:00,337: download_one() 'Wallhaven.cc: Queue populated with 8 URLs'
+INFO: 2025-12-06 13:30:00,337: download_queue_item() 'Wallpaper URL: https://wallhaven.cc/w/mll1ry'
+INFO: 2025-12-06 13:30:03,340: download_queue_item() 'Image src URL: https://w.wallhaven.cc/full/ml/wallhaven-mll1ry.jpg'
+INFO: 2025-12-06 13:30:03,341: save_locally() 'Origin URL: https://wallhaven.cc/w/mll1ry'
+INFO: 2025-12-06 13:30:03,341: save_locally() 'Image URL: https://w.wallhaven.cc/full/ml/wallhaven-mll1ry.jpg'
+INFO: 2025-12-06 13:30:03,341: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-mll1ry.jpg'
+INFO: 2025-12-06 13:30:05,757: save_locally() 'Download complete'
+INFO: 2025-12-06 13:30:05,758: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:30:05,760: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:30:06,602: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:30:06,604: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:30:06,605: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:30:06,605: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-mll1ry.jpg to unseen_downloads'
+INFO: 2025-12-06 13:30:07,606: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:30:07,606: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:30:07,606: get_throttling() 'Reddit: parsing serverside options'
+INFO: 2025-12-06 13:30:07,606: get_throttling() 'Could not parse Reddit serverside options, using defaults None, None'
+INFO: 2025-12-06 13:30:07,606: download_one() 'Reddit: Downloading an image, config: https://www.reddit.com/r/wallpapers/hot/'
+INFO: 2025-12-06 13:30:07,606: download_one() 'Reddit: Queue size: 100'
+INFO: 2025-12-06 13:30:07,606: download_one() 'Reddit: Queue populated with 100 URLs'
+INFO: 2025-12-06 13:30:07,607: save_locally() 'Origin URL: https://www.reddit.com/r/wallpapers/comments/1p11z4u/4798x3071_debian_anime_collection_link_hi_res/'
+INFO: 2025-12-06 13:30:07,607: save_locally() 'Image URL: https://preview.redd.it/zyju1jhta62g1.png?width=4798&format=png&auto=webp&s=b32daab2907e6deeddab9aa34de39a889fb0d0f6'
+INFO: 2025-12-06 13:30:07,607: save_locally() 'Local path: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/zyju1jhta62g1.png'
+INFO: 2025-12-06 13:30:10,158: save_locally() 'Download complete'
+INFO: 2025-12-06 13:30:10,160: update_indicator() 'Setting file info to: /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/jm52pb9v9w2g1.jpeg'
+INFO: 2025-12-06 13:30:10,161: _load_credentials() 'Loaded credentials for user: ayaan25@sirprase.com'
+ERROR: 2025-12-06 13:30:11,005: _get_oauth_token() 'No access token in response'
+INFO: 2025-12-06 13:30:11,006: _get_auth_headers() 'No authentication configured (NSFW content may be blocked)'
+INFO: 2025-12-06 13:30:11,007: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2025-12-06 13:30:11,007: download_one_from() 'Adding downloaded file /home/jay/.config/variety/Downloaded/reddit_www_reddit_com_r_wallpapers_hot_/zyju1jhta62g1.png to unseen_downloads'

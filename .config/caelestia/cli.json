@@ -1,5 +1,5 @@
 {
   "wallpaper": {
-    "postHook": "awww img \"$WALLPAPER_PATH\" --transition-type random --transition-step 50  --transition-duration 1.8 --transition-fps 60"
+    "postHook": "awww img \"$WALLPAPER_PATH\" --transition-type random --transition-step 100  --transition-duration 3 --transition-fps 60"
   }
 }

@@ -25,12 +25,7 @@
 },
  "general": {
         "battery": {
-            "warnLevels": [{
-                  "level":54,
-                  "title": "level sabke niklenge",
-                    "message": "50% gone!!",
-                    "icon": "battery_android_alert"
-                },
+            "warnLevels": [
                 {
                     "level": 20,
                     "title": "Low battery",
@@ -39,7 +34,7 @@
                 },
                 {
                     "level": 10,
-                    "title": "Did you see the previous message?",
+                    "title": "level sabke niklenge",
                     "message": "You should probably plug in a charger <b>now</b>",
                     "icon": "battery_android_frame_1"
                 },
@@ -55,7 +50,14 @@
         }
     },
      "launcher": {
-        "actions": [
+        "actions": [{
+              "name":"run radio",
+              "icon":"radio",
+              "description":"start youtube radio",
+              "command":["hyprctl","dispatch","exec","~/.scripts/radio/radiost.sh","bhajan"],
+              "enabled":true,
+              "dangerous":false   
+            },
             {
                 "name": "Calculator",
                 "icon": "calculate",
@@ -163,7 +165,7 @@
                 "name": "Clear Cache",
                 "icon": "delete_sweep",
                 "description": "Clear system cache",
-                "command": ["rm", "-rf", "~/.cache/*"],
+                "command": ["hyprctl","dispatch","rm", "-rf", "~/.cache/*"],
                 "enabled": true,
                 "dangerous": false
             },{
@@ -173,13 +175,6 @@
                 "command": ["code"],
                 "enabled": true,
                 "dangerous": false
-            },{
-              "name":"run radio",
-              "icon":"radio",
-              "description":"start youtube radio",
-              "command":["hyprctl","dispatch","exec","~/.scripts/radio/radiost.sh","bhajan"],
-              "enabled":true,
-              "dangerous":false   
             }
         ]
     }
