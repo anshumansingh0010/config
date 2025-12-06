@@ -2,9 +2,10 @@
 
 # Check if youtuberadio.sh is running
 if pgrep -f "youtuberadio.sh" >/dev/null; then
-    notify-send "Radio " "Radio will be stop"
+        echo "Radio will be stop"| xargs -I {} notify-send --hint=string:x-c-repl-id:radio "Radio" "{}"
+
     ~/.scripts/radio/kill.sh
 else
-    notify-send "Radio " "Radio is not running → starting it"
+    echo "Radio is not running → starting it"| xargs -I {} notify-send --hint=string:x-c-repl-id:radio "Radio" "{}"
    hyprctl dispatch exec  ~/.scripts/radio/youtuberadio.sh $1 &
 fi

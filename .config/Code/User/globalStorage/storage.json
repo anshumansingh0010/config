@@ -1,15 +1,12 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
-    "telemetry.devDeviceId": "c52e59ec-6538-4a2d-80ec-3eb5a7a626a3",
+    "telemetry.devDeviceId": "44bc912f-4a97-4931-8a98-89f1ea12c4e5",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
             {
                 "folderUri": "file:///home/jay"
-            },
-            {
-                "folderUri": "file:///etc/xdg/quickshell/caelestia"
             }
         ],
         "emptyWindows": []
@@ -56,53 +53,30 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 178,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 231,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///etc/xdg/quickshell/caelestia",
-            "backupPath": "/home/jay/.config/Code/Backups/d1e51c447756edc75235a702d6e89994",
+            "folder": "file:///home/jay",
+            "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
             "uiState": {
                 "mode": 0,
-                "x": 80,
-                "y": 50,
-                "width": 1440,
-                "height": 900
+                "x": 0,
+                "y": 0,
+                "width": 1600,
+                "height": 1000
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/jay",
-                "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            },
-            {
-                "folder": "file:///etc/xdg/quickshell/caelestia",
-                "backupPath": "/home/jay/.config/Code/Backups/d1e51c447756edc75235a702d6e89994",
-                "uiState": {
-                    "mode": 0,
-                    "x": 80,
-                    "y": 50,
-                    "width": 1440,
-                    "height": 900
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 178,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 231,
             "workspaces": {
                 "4234b4b18fd94cdc550e40e60e4caa78": {
                     "sideBarVisible": true,
