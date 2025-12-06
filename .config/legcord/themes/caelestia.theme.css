@@ -55,7 +55,7 @@ body {
   --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* turn on to blur the background of panels */
   --blur-amount: 12px; /* amount of blur */
-  --bg-floating: #121317; /* you can set this to a more opaque color if floating panels look too transparent */
+  --bg-floating: #19120c; /* you can set this to a more opaque color if floating panels look too transparent */
   /* chatbar options */
   --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
   --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
@@ -68,21 +68,21 @@ body {
 :root {
   --colors: on; /* turn off to use discord default colors */
   /* text colors */
-  --text-0: #0c305e; /* text on colored elements */
-  --text-1: rgb(229.8, 228.9, 232.5); /* bright text on colored elements */
-  --text-2: rgb(228.4, 227.45, 231.25); /* headings and important text */
-  --text-3: #e3e2e6; /* normal text */
-  --text-4: #8e909a; /* icon buttons and channels */
-  --text-5: #8e909a; /* muted channels/chats and timestamps */
+  --text-0: #4c2700; /* text on colored elements */
+  --text-1: rgb(240.6, 227.1, 218.1); /* bright text on colored elements */
+  --text-2: rgb(239.8, 225.55, 216.05); /* headings and important text */
+  --text-3: #efe0d6; /* normal text */
+  --text-4: #9e8e82; /* icon buttons and channels */
+  --text-5: #9e8e82; /* muted channels/chats and timestamps */
   /* background and dark colors */
-  --bg-1: #343538; /* dark buttons when clicked */
-  --bg-2: #292a2d; /* dark buttons */
-  --bg-3: #121317; /* spacing, secondary elements */
-  --bg-4: #1e2023; /* main background color */
-  --hover: rgba(227, 226, 230, 0.08); /* channels and buttons when hovered */
-  --active: rgba(227, 226, 230, 0.1); /* channels and buttons when clicked or selected */
-  --active-2: rgba(227, 226, 230, 0.2); /* extra state for transparent buttons */
-  --message-hover: rgba(227, 226, 230, 0.08); /* messages when hovered */
+  --bg-1: #3c332c; /* dark buttons when clicked */
+  --bg-2: #312822; /* dark buttons */
+  --bg-3: #19120c; /* spacing, secondary elements */
+  --bg-4: #261e18; /* main background color */
+  --hover: rgba(239, 224, 214, 0.08); /* channels and buttons when hovered */
+  --active: rgba(239, 224, 214, 0.1); /* channels and buttons when clicked or selected */
+  --active-2: rgba(239, 224, 214, 0.2); /* extra state for transparent buttons */
+  --message-hover: rgba(239, 224, 214, 0.08); /* messages when hovered */
   /* accent colors */
   --accent-1: var(--blue-1); /* links and other accent text */
   --accent-2: var(--blue-2); /* small accent elements */
@@ -117,33 +117,33 @@ body {
   --streaming: var(--purple-2); /* change to #593695 for default */
   --offline: var(--text-4); /* change to #83838b for default offline color */
   /* border colors */
-  --border-light: rgba(142, 144, 154, 0); /* light border color */
-  --border: rgba(142, 144, 154, 0.2); /* normal border color */
-  --button-border: rgba(142, 144, 154, 0); /* neutral border color of buttons */
+  --border-light: rgba(158, 142, 130, 0); /* light border color */
+  --border: rgba(158, 142, 130, 0.2); /* normal border color */
+  --button-border: rgba(158, 142, 130, 0); /* neutral border color of buttons */
   /* base colors */
   --red-1: #ffb4ab;
   --red-2: rgb(255, 160.9821428571, 149.7);
   --red-3: rgb(255, 141.9642857143, 128.4);
   --red-4: rgb(255, 122.9464285714, 107.1);
   --red-5: rgb(255, 103.9285714286, 85.8);
-  --green-1: #c2e4ff;
-  --green-2: rgb(171.55, 218.0631147541, 255);
-  --green-3: rgb(149.1, 208.1262295082, 255);
-  --green-4: rgb(126.65, 198.1893442623, 255);
-  --green-5: rgb(104.2, 188.2524590164, 255);
-  --blue-1: #aac7fe;
-  --blue-2: rgb(149.0465116279, 185.1953488372, 253.7534883721);
-  --blue-3: rgb(128.0930232558, 171.3906976744, 253.5069767442);
-  --blue-4: rgb(107.1395348837, 157.5860465116, 253.2604651163);
-  --blue-5: rgb(86.1860465116, 143.7813953488, 253.0139534884);
-  --yellow-1: #d0f9f4;
-  --yellow-2: rgb(187.7367924528, 246.4132075472, 239.2575471698);
-  --yellow-3: rgb(167.4735849057, 243.8264150943, 234.5150943396);
-  --yellow-4: rgb(147.2103773585, 241.2396226415, 229.7726415094);
-  --yellow-5: rgb(126.9471698113, 238.6528301887, 225.0301886792);
-  --purple-1: #aabeff;
-  --purple-2: rgb(148.75, 173.75, 255);
-  --purple-3: rgb(127.5, 157.5, 255);
-  --purple-4: rgb(106.25, 141.25, 255);
-  --purple-5: #557dff;
+  --green-1: #ffdaa6;
+  --green-2: rgb(255, 209.2488764045, 144.95);
+  --green-3: rgb(255, 200.497752809, 123.9);
+  --green-4: rgb(255, 191.7466292135, 102.85);
+  --green-5: rgb(255, 182.995505618, 81.8);
+  --blue-1: #ffb77a;
+  --blue-2: rgb(255, 172.7954887218, 103.15);
+  --blue-3: rgb(255, 162.5909774436, 84.3);
+  --blue-4: rgb(255, 152.3864661654, 65.45);
+  --blue-5: rgb(255, 142.1819548872, 46.6);
+  --yellow-1: #ffeee1;
+  --yellow-2: rgb(255, 224.4, 201);
+  --yellow-3: rgb(255, 210.8, 177);
+  --yellow-4: rgb(255, 197.2, 153);
+  --yellow-5: rgb(255, 183.6, 129);
+  --purple-1: #ffac8f;
+  --purple-2: rgb(255, 157.2526785714, 123.1);
+  --purple-3: rgb(255, 142.5053571429, 103.2);
+  --purple-4: rgb(255, 127.7580357143, 83.3);
+  --purple-5: rgb(255, 113.0107142857, 63.4);
 }

@@ -43,7 +43,20 @@
     "launcher": {
         "actions": [
             {
-                "name": "run radio",
+                "name": "Clear Cache",
+                "icon": "delete_sweep",
+                "description": "Clear system cache",
+                "command": [
+                    "hyprctl",
+                    "dispatch",
+                    "exec",
+                    "sh -c \"rm -rf $HOME/.cache/*\""
+                ],
+                "enabled": true,
+                "dangerous": false
+            },
+            {
+                "name": "Run Radio",
                 "icon": "radio",
                 "description": "start youtube radio",
                 "command": [
@@ -197,21 +210,6 @@
                 "command": [
                     "systemctl",
                     "suspend-then-hibernate"
-                ],
-                "enabled": true,
-                "dangerous": false
-            },
-            {
-                "name": "Clear Cache",
-                "icon": "delete_sweep",
-                "description": "Clear system cache",
-                "command": [
-                    "hyprctl",
-                    "dispatch",
-                    "exec",
-                    "rm",
-                    "-rf",
-                    "~/.cache/"
                 ],
                 "enabled": true,
                 "dangerous": false
