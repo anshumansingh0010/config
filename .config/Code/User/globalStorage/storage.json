@@ -6,12 +6,12 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/jay/.scripts/mpvpaper"
+                "folderUri": "file:///usr/lib/python3.13/site-packages/caelestia/utils"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1765043352829"
+                "backupFolder": "1765048415676"
             }
         ]
     },
@@ -32,9 +32,12 @@
             "file:///home/jay/tmptasks/experiment/new": "__default__profile__",
             "file:///home/jay": "__default__profile__",
             "file:///home/jay/tmptasks/gitsave/config/.config/fish": "__default__profile__",
-            "file:///home/jay/.scripts/mpvpaper": "__default__profile__"
+            "file:///home/jay/.scripts/mpvpaper": "__default__profile__",
+            "file:///usr/lib/python3.13/site-packages/caelestia/utils": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1765048415676": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
     "themeBackground": "#011627",
@@ -67,14 +70,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/.scripts/mpvpaper",
-            "backupPath": "/home/jay/.config/Code/Backups/85ca9a04c8f9e133401cf08543c33129",
+            "folder": "file:///usr/lib/python3.13/site-packages/caelestia/utils",
+            "backupPath": "/home/jay/.config/Code/Backups/8451a1a0f43f6baf4d45d0ec7c0c1116",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 1600,
-                "height": 1000
+                "width": 770,
+                "height": 988
             }
         },
         "openedWindows": []
@@ -141,6 +144,10 @@
                     "auxiliaryBarVisible": true
                 },
                 "d0851c3496edab6099df16990b00f5a6": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "b888a98f08b48d7b197317eda581b6ab": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }

@@ -38,58 +38,58 @@ color_scheme=6
 
 # Custom color definitions using template variables
 # Main interface colors
-color_background=#11140f
-color_text=#e1e4da
-color_highlight=#a4d396
-color_selected=#1d211b
+color_background=#1a110f
+color_text=#f1dfda
+color_highlight=#ffb4a1
+color_selected=#271d1b
 
 # CPU meter colors (gradient)
-color_cpu_low=#b6efa8
-color_cpu_med=#e6f7cd
-color_cpu_high=#c5b542
+color_cpu_low=#ffd8bf
+color_cpu_med=#ffeee7
+color_cpu_high=#ff9889
 
 # Memory meter colors
-color_mem_used=#6ecfa5
-color_mem_buffers=#b6edba
-color_mem_cache=#89d8a8
-color_mem_available=#b6efa8
+color_mem_used=#ffa2bd
+color_mem_buffers=#ffdb94
+color_mem_cache=#f2b2f2
+color_mem_available=#ffd8bf
 
 # Process list colors
-color_process_normal=#e1e4da
-color_process_running=#b6efa8
-color_process_sleeping=#8d9387
-color_process_zombie=#c5b542
-color_process_stopped=#e6f7cd
+color_process_normal=#f1dfda
+color_process_running=#ffd8bf
+color_process_sleeping=#a08c88
+color_process_zombie=#ff9889
+color_process_stopped=#ffeee7
 
 # Header and border colors
-color_header=#c3c8bc
-color_border=#8d9387
-color_separator=#43483f
+color_header=#d8c2bc
+color_border=#a08c88
+color_separator=#53433f
 
 # Function key colors
-color_function_key=#a0cfd2
-color_function_desc=#e1e4da
+color_function_key=#d9c58d
+color_function_desc=#f1dfda
 
 # Tree view colors
-color_tree_line=#8d9387
-color_tree_collapsed=#a4d396
-color_tree_expanded=#bbcbb2
+color_tree_line=#a08c88
+color_tree_collapsed=#ffb4a1
+color_tree_expanded=#e7bdb3
 
 # Load average colors
-color_load_low=#b6efa8
-color_load_med=#e6f7cd
-color_load_high=#c5b542
+color_load_low=#ffd8bf
+color_load_med=#ffeee7
+color_load_high=#ff9889
 
 # Priority colors
-color_priority_high=#c5b542
-color_priority_normal=#e1e4da
-color_priority_low=#8d9387
+color_priority_high=#ff9889
+color_priority_normal=#f1dfda
+color_priority_low=#a08c88
 
 # Swap meter colors
-color_swap_used=#c6c177
-color_swap_cache=#c3d591
+color_swap_used=#faaa9d
+color_swap_cache=#ffbfab
 
 # Temperature colors (if enabled)
-color_temp_cool=#b6efa8
-color_temp_warm=#e6f7cd
-color_temp_hot=#c5b542
+color_temp_cool=#ffd8bf
+color_temp_warm=#ffeee7
+color_temp_hot=#ff9889
