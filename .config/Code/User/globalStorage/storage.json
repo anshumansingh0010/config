@@ -4,14 +4,10 @@
     "telemetry.devDeviceId": "44bc912f-4a97-4931-8a98-89f1ea12c4e5",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
-            {
-                "folderUri": "file:///usr/lib/python3.13/site-packages/caelestia/utils"
-            }
-        ],
+        "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1765048415676"
+                "backupFolder": "1765054766522"
             }
         ]
     },
@@ -36,7 +32,7 @@
             "file:///usr/lib/python3.13/site-packages/caelestia/utils": "__default__profile__"
         },
         "emptyWindows": {
-            "1765048415676": "__default__profile__"
+            "1765054766522": "__default__profile__"
         }
     },
     "theme": "vs-dark",
@@ -62,16 +58,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 187,
-            "auxiliaryBarWidth": 187,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///usr/lib/python3.13/site-packages/caelestia/utils",
-            "backupPath": "/home/jay/.config/Code/Backups/8451a1a0f43f6baf4d45d0ec7c0c1116",
+            "backupPath": "/home/jay/.config/Code/Backups/1765054766522",
             "uiState": {
                 "mode": 0,
                 "x": 0,

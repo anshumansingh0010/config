@@ -55,7 +55,7 @@ body {
   --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* turn on to blur the background of panels */
   --blur-amount: 12px; /* amount of blur */
-  --bg-floating: #1a110f; /* you can set this to a more opaque color if floating panels look too transparent */
+  --bg-floating: #1a1110; /* you can set this to a more opaque color if floating panels look too transparent */
   /* chatbar options */
   --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
   --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
@@ -68,21 +68,21 @@ body {
 :root {
   --colors: on; /* turn off to use discord default colors */
   /* text colors */
-  --text-0: #561f10; /* text on colored elements */
-  --text-1: rgb(242.4, 226.2, 221.7); /* bright text on colored elements */
-  --text-2: rgb(241.7, 224.6, 219.85); /* headings and important text */
-  --text-3: #f1dfda; /* normal text */
+  --text-0: #561e14; /* text on colored elements */
+  --text-1: rgb(242.4, 226.2, 222.6); /* bright text on colored elements */
+  --text-2: rgb(241.7, 224.6, 220.8); /* headings and important text */
+  --text-3: #f1dfdb; /* normal text */
   --text-4: #a08c88; /* icon buttons and channels */
   --text-5: #a08c88; /* muted channels/chats and timestamps */
   /* background and dark colors */
   --bg-1: #3d3230; /* dark buttons when clicked */
-  --bg-2: #322825; /* dark buttons */
-  --bg-3: #1a110f; /* spacing, secondary elements */
+  --bg-2: #322826; /* dark buttons */
+  --bg-3: #1a1110; /* spacing, secondary elements */
   --bg-4: #271d1b; /* main background color */
-  --hover: rgba(241, 223, 218, 0.08); /* channels and buttons when hovered */
-  --active: rgba(241, 223, 218, 0.1); /* channels and buttons when clicked or selected */
-  --active-2: rgba(241, 223, 218, 0.2); /* extra state for transparent buttons */
-  --message-hover: rgba(241, 223, 218, 0.08); /* messages when hovered */
+  --hover: rgba(241, 223, 219, 0.08); /* channels and buttons when hovered */
+  --active: rgba(241, 223, 219, 0.1); /* channels and buttons when clicked or selected */
+  --active-2: rgba(241, 223, 219, 0.2); /* extra state for transparent buttons */
+  --message-hover: rgba(241, 223, 219, 0.08); /* messages when hovered */
   /* accent colors */
   --accent-1: var(--blue-1); /* links and other accent text */
   --accent-2: var(--blue-2); /* small accent elements */
@@ -126,24 +126,24 @@ body {
   --red-3: rgb(255, 141.9642857143, 128.4);
   --red-4: rgb(255, 122.9464285714, 107.1);
   --red-5: rgb(255, 103.9285714286, 85.8);
-  --green-1: #ffd8bf;
-  --green-2: rgb(255, 202.4109375, 168.7);
-  --green-3: rgb(255, 188.821875, 146.4);
-  --green-4: rgb(255, 175.2328125, 124.1);
-  --green-5: rgb(255, 161.64375, 101.8);
-  --blue-1: #ffb4a1;
-  --blue-2: rgb(255, 163.4042553191, 140.2);
-  --blue-3: rgb(255, 146.8085106383, 119.4);
-  --blue-4: rgb(255, 130.2127659574, 98.6);
-  --blue-5: rgb(255, 113.6170212766, 77.8);
+  --green-1: #ffd8c0;
+  --green-2: rgb(255, 202.1642857143, 169.65);
+  --green-3: rgb(255, 188.3285714286, 147.3);
+  --green-4: rgb(255, 174.4928571429, 124.95);
+  --green-5: rgb(255, 160.6571428571, 102.6);
+  --blue-1: #ffb4a5;
+  --blue-2: rgb(255, 162.5, 144);
+  --blue-3: #ff917b;
+  --blue-4: rgb(255, 127.5, 102);
+  --blue-5: #ff6e51;
   --yellow-1: #ffeee7;
   --yellow-2: rgb(255, 220.7875, 206.7);
   --yellow-3: rgb(255, 203.575, 182.4);
   --yellow-4: rgb(255, 186.3625, 158.1);
   --yellow-5: rgb(255, 169.15, 133.8);
-  --purple-1: #ffa9ac;
-  --purple-2: rgb(255, 147.8, 151.5395348837);
-  --purple-3: rgb(255, 126.6, 131.0790697674);
-  --purple-4: rgb(255, 105.4, 110.6186046512);
-  --purple-5: rgb(255, 84.2, 90.1581395349);
+  --purple-1: #ffa9af;
+  --purple-2: rgb(255, 147.8, 155.2790697674);
+  --purple-3: rgb(255, 126.6, 135.5581395349);
+  --purple-4: rgb(255, 105.4, 115.8372093023);
+  --purple-5: rgb(255, 84.2, 96.1162790698);
 }
