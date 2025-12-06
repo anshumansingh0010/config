@@ -7,6 +7,9 @@
         "folders": [
             {
                 "folderUri": "file:///home/jay"
+            },
+            {
+                "folderUri": "file:///etc/xdg/quickshell/caelestia"
             }
         ],
         "emptyWindows": []
@@ -61,17 +64,40 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay",
-            "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
+            "folder": "file:///etc/xdg/quickshell/caelestia",
+            "backupPath": "/home/jay/.config/Code/Backups/d1e51c447756edc75235a702d6e89994",
             "uiState": {
                 "mode": 0,
-                "x": 0,
-                "y": 0,
-                "width": 1600,
-                "height": 1000
+                "x": 80,
+                "y": 50,
+                "width": 1440,
+                "height": 900
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/jay",
+                "backupPath": "/home/jay/.config/Code/Backups/2f2fe78dd28d2a137b381d26c5047c49",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1600,
+                    "height": 1000
+                }
+            },
+            {
+                "folder": "file:///etc/xdg/quickshell/caelestia",
+                "backupPath": "/home/jay/.config/Code/Backups/d1e51c447756edc75235a702d6e89994",
+                "uiState": {
+                    "mode": 0,
+                    "x": 80,
+                    "y": 50,
+                    "width": 1440,
+                    "height": 900
+                }
+            }
+        ]
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
