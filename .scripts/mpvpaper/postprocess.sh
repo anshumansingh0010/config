@@ -7,7 +7,7 @@ if [[ "$WALLPAPER_PATH" = "$OUTPUT_DIR"* ]]; then
    
 else
    echo "Using swww for static wallpaper..."
-   hyprctl dispatch exec pkill mpvpaper
    hyprctl dispatch exec awww-daemon
    awww img $WALLPAPER_PATH --transition-type random --transition-step 100 --transition-duration 3 --transition-fps 60
+   hyprctl dispatch exec pkill mpvpaper
 fi

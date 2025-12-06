@@ -50,17 +50,20 @@ mpv --no-audio \
 
 SCREENSHOT=$(ls -t "$OUTPUT_DIR"/*.png 2>/dev/null | head -n1)
 mv "$SCREENSHOT" "$OUTPUT_FILE"
+SOCKET_PATH="/tmp/mpv-socket"
 
 # Check if mpvpaper is already running with IPC socket
-if [[ -S /tmp/mpv-socket ]]; then
+if ss -xln | grep -q "$SOCKET_PATH"; then
     echo "mpvpaper already running, changing video..."
-    echo "loadfile \"$VIDEO_URL\" replace" | socat - /tmp/mpv-socket
 else
+    pkill mpvpaper
     echo "Starting mpvpaper..."
-    mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=/tmp/mpv-socket" eDP-1 "$VIDEO_URL" &
+    mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=$SOCKET_PATH" eDP-1 "$OUTPUT_FILE" &
+    sleep 2
 fi
 
 
+echo "loadfile \"$VIDEO_URL\" replace" | socat - $SOCKET_PATH
 echo "Setting wallpaper with caelestia..."
 caelestia wallpaper -f "$OUTPUT_FILE"
 sleep 2
