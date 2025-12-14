@@ -1,4 +1,15 @@
 {
     "workbench.colorTheme": "Night Owl",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.18-linux-g++_from_PATH",
+            "path": "/usr/bin/qmake"
+        }
+    ],
+    "qt-qml.qmlls.useQmlImportPathEnvVar": true,
+    "terminal.integrated.automationProfile.linux": {
+        
+    },
+    "editor.minimap.enabled": false
 }

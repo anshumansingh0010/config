@@ -14,7 +14,30 @@
             "activeWindow": false
         }
     },
+  "notifs": {
+    "expire": true,
+    "defaultExpireTimeout": 3000
+  },
     "general": {
+        "idle": {
+            "lockBeforeSleep": true,
+            "inhibitWhenAudio": true,
+            "timeouts": [
+                {
+                    "timeout": 900,
+                    "idleAction": "lock"
+                },
+                {
+                    "timeout": 1200,
+                    "idleAction": "dpms off",
+                    "returnAction": "dpms on"
+                },
+                {
+                    "timeout": 1800,
+                    "idleAction": ["systemctl", "suspend-then-hibernate"]
+                }
+            ]
+        },
         "battery": {
             "warnLevels": [
                 {
@@ -55,9 +78,9 @@
                 "enabled": true,
                 "dangerous": false
             },{
-                "name":"live wallpaper",
-                "description":"change live wallpaper",
+                "name":"Live Wallpaper",
                 "icon":"wallet",
+                "description":"Change live wallpaper",
                 "command": [
                     "hyprctl",
                     "dispatch",
@@ -71,13 +94,13 @@
             {
                 "name": "Run Radio",
                 "icon": "radio",
-                "description": "start youtube radio",
+                "description": "Start YouTube Radio",
                 "command": [
                     "hyprctl",
                     "dispatch",
                     "exec",
                     "~/.scripts/radio/radiost.sh",
-                    "krishna bhajan"
+                    "\"ram-krishna-hanuman-bhajan\""
                 ],
                 "enabled": true,
                 "dangerous": false

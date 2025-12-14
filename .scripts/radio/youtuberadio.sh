@@ -1,54 +1,56 @@
 #!/bin/bash
-echo $$ > ~/.cache/auto-music.pid
-if [ -z "$1" ]; then
-    echo "Usage: ./auto-music.sh <category>" | xargs -I {} notify-send --hint=string:x-c-repl-id:radio "Radio""{}"
 
+echo $$ > ~/.cache/auto-music.pid
+
+if [ -z "$1" ]; then
+    notify-send --hint=string:x-c-repl-id:radio "Radio" "Usage: ./auto-music.sh <category>"
     exit 1
 fi
-
-| xargs -I {} notify-send --hint=string:x-c-repl-id:wallpaper "wallpaper""{}"
 
 CATEGORY="$1"
 CACHE_DIR="$HOME/.cache/auto-music"
 mkdir -p "$CACHE_DIR"
+
 HISTORY="$CACHE_DIR/${CATEGORY}.history"
 touch "$HISTORY"
- 
-echo "Starting fast music for category: $CATEGORY"| xargs -I {} notify-send --hint=string:x-c-repl-id:radio "Radio""{}"
 
-# Function to fetch new IDs (fast mode: only 5 results)
+notify-send --hint=string:x-c-repl-id:radio "Radio" "Starting fast music: $CATEGORY"
+
+# Normalise history (remove blank lines, whitespace)
+sed -i 's/\r//g; s/[ \t]*$//; /^$/d;' "$HISTORY"
+
 fetch_ids() {
-    yt-dlp "ytsearch5:$CATEGORY music" --get-id 2>/dev/null
+    yt-dlp "ytsearch5:$CATEGORY " --get-id 2>/dev/null | tr -d '\r'
 }
 
-# Load initial list
-RAW=$(fetch_ids)
+RAW="$(fetch_ids)"
 
 while true; do
-    # Filter out already-played IDs
-    NEW_IDS=""
+    NEW_IDS=()
+
+    # Filter only new IDs
     for ID in $RAW; do
-        if ! grep -qx "$ID" "$HISTORY"; then
-            NEW_IDS="$NEW_IDS $ID"
+        if ! grep -Fxq "$ID" "$HISTORY"; then
+            NEW_IDS+=("$ID")
         fi
     done
 
-    # If empty → fetch again
-    if [ -z "$NEW_IDS" ]; then
-        RAW=$(fetch_ids)
+    # If empty, fetch again
+    if [ ${#NEW_IDS[@]} -eq 0 ]; then
+        RAW="$(fetch_ids)"
         continue
     fi
 
-    # Shuffle
-    IDS=$(echo "$NEW_IDS" | tr ' ' '\n' | shuf)
+    # Shuffle IDs
+    SHUFFLED=$(printf '%s\n' "${NEW_IDS[@]}" | shuf)
 
-    # Play one by one
-    for ID in $IDS; do
-        echo "Playing: https://youtube.com/watch?v=$ID"| xargs -I {} notify-send --hint=string:x-c-repl-id:radio "Radio" "{}"
+    # Play in order
+    while read -r ID; do
+        [ -z "$ID" ] && continue
+        notify-send --hint=string:x-c-repl-id:radio "Radio" "Playing: $ID"
         echo "$ID" >> "$HISTORY"
-        mpv --no-video "https://youtube.com/watch?v=$ID"
-    done
+        mpv --no-video "https://www.youtube.com/watch?v=$ID"
+    done <<< "$SHUFFLED"
 
-    # After finishing this batch, fetch again
-    RAW=$(fetch_ids)
+    RAW="$(fetch_ids)"
 done

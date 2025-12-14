@@ -11,6 +11,10 @@ application/xhtml+xml=zen.desktop
 application/x-extension-xhtml=zen.desktop
 application/x-extension-xht=zen.desktop
 application/x-shellscript=code.desktop
+text/css=code.desktop
+text/plain=code.desktop
+application/x-zerosize=code.desktop
+application/json=code.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -24,3 +28,7 @@ application/xhtml+xml=zen.desktop;
 application/x-extension-xhtml=zen.desktop;
 application/x-extension-xht=zen.desktop;
 application/x-shellscript=code.desktop;
+text/css=code.desktop;
+text/plain=code.desktop;
+application/x-zerosize=code.desktop;
+application/json=code.desktop;
