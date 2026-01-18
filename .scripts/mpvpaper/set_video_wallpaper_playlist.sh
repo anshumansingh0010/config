@@ -58,7 +58,7 @@ if ss -xln | grep -q "$SOCKET_PATH"; then
 else
     pkill mpvpaper
     echo "Starting mpvpaper..."
-    mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 --loop --no-audio --input-ipc-server=$SOCKET_PATH" eDP-1 "$OUTPUT_FILE" &
+    mpvpaper -o "video-aspect-override=16:10 --panscan=1.0 vo=v --hwdec=auto --loop --no-audio --input-ipc-server=$SOCKET_PATH" eDP-1 "$OUTPUT_FILE" &
     sleep 2
 fi
 

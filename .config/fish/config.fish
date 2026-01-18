@@ -11,6 +11,7 @@ if status is-interactive
     alias gitbackup="~/.scripts/gitpush.sh"
     alias rm="trash-put"
     alias lively="~/.scripts/mpvpaper/set_video_wallpaper.sh"	
+    
     # Abbrs
     abbr gd 'git diff'
     abbr ga 'git add .'
@@ -33,6 +34,8 @@ if status is-interactive
     abbr la 'ls -a'
     abbr lla 'ls -la'
 
+    zoxide init fish --cmd cd | source
+    
     # Custom colours
     cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
 

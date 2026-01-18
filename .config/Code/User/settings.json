@@ -11,5 +11,28 @@
     "terminal.integrated.automationProfile.linux": {
         
     },
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/jay/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "terminal.external.linuxExec": "fish",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/usr/bin/bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "/usr/bin/fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash"
 }
