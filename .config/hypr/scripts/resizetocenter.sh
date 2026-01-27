@@ -1,9 +1,9 @@
 width=$(hyprctl activewindow -j | jq ".size[0]")
 height=$(hyprctl activewindow -j | jq ".size[1]")
-mxheight=922
-mxwidth=1504
-ystart=55
-xstart=73
+mxheight=928
+mxwidth=1513
+ystart=50
+xstart=67
 xmove=0
 ymove=16
 
@@ -19,4 +19,7 @@ elif (( width > mxwidth )); then
 hyprctl dispatch resizeactive exact $mxwidth $height
 xpos=$(($xstart - $(hyprctl activewindow -j | jq ".at[0]")))
 hyprctl dispatch moveactive $xpos 0
+else
+hyprctl dispatch centerwindow 1
+hyprctl dispatch moveactive  $xmove $ymove
 fi

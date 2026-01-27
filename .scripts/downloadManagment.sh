@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOWNLOADS_DIR="$HOME/Downloads"
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+WALLPAPER_DIR="$HOME/Downloads/Pictures"
 
 # Create required directories
 mkdir -p "$WALLPAPER_DIR"

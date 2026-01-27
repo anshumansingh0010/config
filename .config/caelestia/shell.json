@@ -22,13 +22,13 @@
     },
     "anim": {
       "durations": {
-        "scale": 1
+        "scale": 0.921354166666666
       }
     },
     "transparency": {
       "enabled": true,
       "base": 0.8,
-      "layers": 0.2986276186611007
+      "layers": 0.3
     }
   },
   "general": {
@@ -287,7 +287,7 @@
           "dispatch",
           "exec",
           "~/.scripts/radio/radiost.sh",
-          "\"ram-krishna-hanuman-bhajan\""
+          "\"old-bhajan\""
         ],
         "dangerous": false,
         "description": "Start YouTube Radio",

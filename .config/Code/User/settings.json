@@ -17,7 +17,8 @@
     "terminal.external.linuxExec": "fish",
     "terminal.integrated.profiles.linux": {
         "bash": {
-            "path": "/usr/bin/bash"
+            "path": "/usr/bin/bash",
+            "icon": "terminal-bash"
         },
         "zsh": {
             "path": "zsh"
@@ -34,5 +35,31 @@
             "icon": "terminal-powershell"
         }
     },
-    "terminal.integrated.defaultProfile.linux": "bash"
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "window.menuStyle": "custom",
+    "window.titleBarStyle": "native",
+    "chat.disableAIFeatures": true,
+    "[dockercompose]": {
+        "editor.tabSize": 2
+    },
+    "[chatagent]": {
+        "editor.tabSize": 2
+    },
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
+    "[prompt]": {
+        "editor.tabSize": 2
+    },
+    "[instructions]": {
+        "editor.tabSize": 2
+    },
+    "editor.tabSize": 2,
+    "[cpp]": {
+        
+        "editor.wordBasedSuggestions": "off",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.stickyScroll.defaultModel": "foldingProviderModel",
+        "editor.suggest.insertMode": "replace"
+    }
 }

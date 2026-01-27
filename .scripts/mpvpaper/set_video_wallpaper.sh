@@ -1,7 +1,7 @@
 #!/bin/bash
 VIDEO_FILE="$1"
 TIMESTAMP="${2:-3}"
-OUTPUT_DIR="${HOME}/Pictures/wallpapersmpvpaper"
+OUTPUT_DIR="${HOME}/.cache/wallpapersmpvpaper"
 OUTPUT_FILE="${OUTPUT_DIR}/wallpaper_$(date +%Y%m%d_%H%M%S).png"
 
 mkdir -p "$OUTPUT_DIR"

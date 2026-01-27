@@ -17,6 +17,7 @@ application/x-zerosize=code.desktop
 application/json=code.desktop
 image/png=swappy.desktop
 image/jpeg=swappy.desktop
+application/vnd.ms-publisher=code.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -36,3 +37,4 @@ application/x-zerosize=code.desktop;
 application/json=code.desktop;
 image/png=swappy.desktop;
 image/jpeg=swappy.desktop;
+application/vnd.ms-publisher=code.desktop;

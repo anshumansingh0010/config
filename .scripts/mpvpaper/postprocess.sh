@@ -1,7 +1,7 @@
 #!/bin/bash
 WALLPAPER_PATH=$1
 echo $WALLPAPER_PATH 
-OUTPUT_DIR="${HOME}/Pictures/wallpapersmpvpaper"
+OUTPUT_DIR="${HOME}/.cache/wallpapersmpvpaper"
 if [[ "$WALLPAPER_PATH" = "$OUTPUT_DIR"* ]]; then
    echo "Using mpvpaper"
    

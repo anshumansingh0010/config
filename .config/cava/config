@@ -24,13 +24,13 @@ style = stereo
 gradient = 1
 gradient_count = 8
 gradient_color_1 = '#c8e3ff'
-gradient_color_2 = '#d4dfff'
-gradient_color_3 = '#d0daff'
-gradient_color_4 = '#b8c5ff'
-gradient_color_5 = '#b1b7ff'
-gradient_color_6 = '#c8c8ff'
-gradient_color_7 = '#c0b8ff'
-gradient_color_8 = '#cab5ed'
+gradient_color_2 = '#dedcff'
+gradient_color_3 = '#dfd5ff'
+gradient_color_4 = '#d0bdff'
+gradient_color_5 = '#cfaeff'
+gradient_color_6 = '#dfc0ff'
+gradient_color_7 = '#deaefd'
+gradient_color_8 = '#deafe0'
 
 [smoothing]
 # Noise reduction (0-100) - higher = smoother but less responsive

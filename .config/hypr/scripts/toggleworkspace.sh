@@ -6,7 +6,7 @@ if [[ "$ws" == special* ]]; then
 
 else
 
-  hyprctl dispatch movetoworkspacesilent special
+  hyprctl dispatch movetoworkspacesilent special:todo
   
 fi
 
