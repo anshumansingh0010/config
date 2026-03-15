@@ -1,18 +1,15 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
-    "telemetry.devDeviceId": "4c13f811-73b9-4e43-acad-7bdc64ea0170",
+    "telemetry.devDeviceId": "d168232a-bcbb-4058-ac26-49c73d47465b",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
+        "folders": [],
+        "emptyWindows": [
             {
-                "folderUri": "file:///home/jay/.config/hypr"
-            },
-            {
-                "folderUri": "file:///home/jay/Desktop/Artificial%20Intelligence"
+                "backupFolder": "1773554283939"
             }
-        ],
-        "emptyWindows": []
+        ]
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -53,34 +50,49 @@
             "file:///home/jay/myproject": "__default__profile__",
             "file:///home/jay/project/moby": "__default__profile__",
             "file:///home/jay/project": "__default__profile__",
-            "file:///home/jay/project/ddr": "__default__profile__"
+            "file:///home/jay/project/ddr": "__default__profile__",
+            "file:///home/jay/Desktop/Computer%20Networks": "__default__profile__",
+            "file:///home/jay/Downloads/Others": "__default__profile__",
+            "file:///home/jay/project/gtk-py": "__default__profile__",
+            "file:///home/jay/project/file-sharing": "__default__profile__",
+            "file:///home/jay/project/fs": "__default__profile__",
+            "file:///home/jay/project/consumer-producer": "__default__profile__",
+            "file:///home/jay/project/animekai": "__default__profile__",
+            "file:///home/jay/project/basicandroid": "__default__profile__",
+            "file:///home/jay/project/basicandroid/flutter_application_1": "__default__profile__",
+            "file:///home/jay/project/Mini-JVM": "__default__profile__",
+            "file:///home/jay/.config/foot": "__default__profile__",
+            "file:///home/jay/project/fermiarc": "__default__profile__",
+            "file:///home/jay/.config/matugen": "__default__profile__",
+            "file:///home/jay/.config/xsettingsd": "__default__profile__",
+            "file:///home/jay/.icons/default": "__default__profile__",
+            "file:///home/jay/.zen": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1773554283939": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
-    "themeBackground": "#011627",
+    "themeBackground": "#272822",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#d6deeb",
-            "background": "#011627",
-            "editorBackground": "#011627",
-            "titleBarBackground": "#011627",
-            "activityBarBackground": "#011627",
-            "activityBarBorder": "#011627",
-            "sideBarBackground": "#011627",
-            "sideBarBorder": "#011627",
-            "statusBarBackground": "#011627",
-            "statusBarBorder": "#262a39",
-            "statusBarNoFolderBackground": "#011627"
+            "foreground": "#cccccc",
+            "background": "#272822",
+            "editorBackground": "#272822",
+            "titleBarBackground": "#1e1f1c",
+            "activityBarBackground": "#272822",
+            "sideBarBackground": "#1e1f1c",
+            "statusBarBackground": "#414339",
+            "statusBarNoFolderBackground": "#414339"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
+            "sideBarWidth": 188,
             "auxiliaryBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
@@ -88,84 +100,22 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/Desktop/Artificial%20Intelligence",
-            "backupPath": "/home/jay/.config/Code/Backups/d5eb619281d8cd6ad805d2835537d0fb",
+            "backupPath": "/home/jay/.config/Code/Backups/1773554283939",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 759,
-                "height": 966,
-                "zoomLevel": 2
+                "width": 761,
+                "height": 968
             }
         },
         "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 187,
+            "auxiliaryBarWidth": 187,
             "workspaces": {
-                "4234b4b18fd94cdc550e40e60e4caa78": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "dcdb94ab4165cf062d5df2fc09e22f07": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "47c578ef4c48dbe7d7e34578eee7b52f": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "0e651a4e3506eab531de3c8b27a87e62": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "be4275f3ed8d77b9fe37fed5e669e8fc": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "6618affc4f2cfeb2283b99250e50d662": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "423556e02a4f0039d5386817cd98c021": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "44e1bf249446a8ed9157a2c1367a50c8": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "3757b112665855507bd972a33b654c58": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "7954cc764807d1e290741d52612caf2c": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "aca5a99f573256674d0c2d020ba70957": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "2ce8de9cd375d70368e341b43970acd6": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "d0851c3496edab6099df16990b00f5a6": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "b888a98f08b48d7b197317eda581b6ab": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
-                "ab83e0f09eae786e3767a7b612cc1ed2": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": true
-                },
                 "856b0f569be278e516dd7ba1ec2b29be": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
@@ -222,10 +172,6 @@
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 },
-                "ec42d33c0eb0d9e3ec3ddcefd115a690": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "a26d742e1d172e18a22c73a5f9e6250d": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -250,10 +196,6 @@
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 },
-                "d18a4a589718ac3e5629926ae514eead": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "2bef99ad51dd1ceb8226aaa058fcb24e": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -262,11 +204,115 @@
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 },
-                "4e9b78ecf3aa1873b8f9a0a3db03025d": {
+                "19678da0698c08d42ad795aa0bc292ac": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 },
-                "19678da0698c08d42ad795aa0bc292ac": {
+                "945a930b5f5631a74f4bac16cad80248": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "ec42d33c0eb0d9e3ec3ddcefd115a690": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "76fd9acbd5630de608010cf9dab07d71": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7982c7bf827433028e989a4321a381e6": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "018fb700b47cd664fcc25daa94e79a7e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "986cbe1d8bec2db9353ebdf2e614eed1": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "3d6232c852e37ac086ce4a85406218e9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7f7e132c0a2355b89a6cfcdfd7629648": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "81912fb73df7449ca3564cd6001b6e2c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "c4981c639b3fb7516f82e148837cbae8": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "0e17f40120ac1c184f66880e74e34368": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "30f65eb1e4632b5a97739b034f202f20": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "1ca75b2e38a2756b95ac1612be143a62": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "cdf3f5f80d3cca6403c38da5a8fcbe2f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "d18a4a589718ac3e5629926ae514eead": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "24ca2a8a58db6d229fdd072e8a1ae47d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "d0916593bad74a358051e264d7829ffe": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "1ff22b8c95526d32652082608fe7ea38": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7204d5f2f8922a2413b2dacea3b15d6d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "49a22fc230b66605e23042e522a861b5": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "dee703475502553a1d42869a46d282f1": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "181952c2da438e2f2c0f5e6409dc99a4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "38bfc269590b3f8435cfef0c870ebb98": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "011f515114ea470b8d4447a85eef582c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "fa9996bafd4efeb3b216524c6766e052": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "0e651a4e3506eab531de3c8b27a87e62": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "c6a647d596d61cb75401b115e70b97c7": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }

@@ -1,19 +1,21 @@
 {
-    "workbench.colorTheme": "Night Owl",
-    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Monokai",
     "qt-core.additionalQtPaths": [
         {
             "name": "Qt-5.15.18-linux-g++_from_PATH",
             "path": "/usr/bin/qmake"
+        },
+        {
+            "name": "Qt-5.15.18-linux-g++_from_PATH",
+            "path": "/usr/bin/qtpaths"
         }
     ],
     "qt-qml.qmlls.useQmlImportPathEnvVar": true,
     "terminal.integrated.automationProfile.linux": {
         
     },
-    "editor.minimap.enabled": false,
     "C_Cpp.intelliSenseEngine": "disabled",
-    "clangd.path": "/home/jay/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "clangd.path": "/home/jay/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.8/clangd_21.1.8/bin/clangd",
     "terminal.external.linuxExec": "fish",
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -38,7 +40,6 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "window.menuStyle": "custom",
     "window.titleBarStyle": "native",
-    "chat.disableAIFeatures": true,
     "[dockercompose]": {
         "editor.tabSize": 2
     },
@@ -61,5 +62,35 @@
         "editor.semanticHighlighting.enabled": true,
         "editor.stickyScroll.defaultModel": "foldingProviderModel",
         "editor.suggest.insertMode": "replace"
+    },
+    "hexeditor.columnWidth": 32,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.minimap.enabled": false,
+    "files.associations": {
+        "*.{a80,z80,asm,inc,s}": "asm-collection",
+        "*.{list,lis}": "asm-collection-list"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "*.qrc": "qt-core.qrcEditor"
     }
 }

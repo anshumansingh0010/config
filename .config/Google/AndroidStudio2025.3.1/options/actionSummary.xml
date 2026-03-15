@@ -1,0 +1,22 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1771998269738" />
+    </e>
+    <e n="WelcomeScreen.RunDeviceManager2">
+      <i c="3" l="1771999481809" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.ColdBootAction">
+      <i c="1" l="1771999499059" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.DeleteAction">
+      <i c="3" l="1771999589121" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.DeviceManagerPanel$toAnAction$2">
+      <i c="1" l="1771998930029" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.EditDeviceAction">
+      <i c="1" l="1771999045371" />
+    </e>
+  </component>
+</application>

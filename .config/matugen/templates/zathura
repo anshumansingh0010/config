@@ -1,0 +1,13 @@
+# Zathura Material You Theme
+set default-bg           "{{colors.surface.default.hex}}"
+set default-fg           "{{colors.on_surface.default.hex}}"
+set statusbar-bg        "{{colors.surface_container.default.hex}}"
+set statusbar-fg        "{{colors.on_surface_variant.default.hex}}"
+set inputbar-bg         "{{colors.surface_container_high.default.hex}}"
+set inputbar-fg         "{{colors.primary.default.hex}}"
+
+# PDF Recoloring (Dark Mode / Midnight Mode)
+set recolor             "true"
+set recolor-lightcolor  "{{colors.surface.default.rgba}}"
+set recolor-darkcolor   "{{colors.on_surface.default.hex}}"
+set recolor-keephue     "true" 

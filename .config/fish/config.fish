@@ -11,6 +11,9 @@ if status is-interactive
     alias gitbackup="~/.scripts/gitpush.sh"
     alias rm="trash-put"
     alias lively="~/.scripts/mpvpaper/set_video_wallpaper.sh"	
+    set -Ux ANDROID_HOME /opt/android-sdk
+    fish_add_path /opt/android-sdk/cmdline-tools/latest/bin
+    fish_add_path /opt/android-sdk/platform-tools
     
     # Abbrs
     abbr gd 'git diff'

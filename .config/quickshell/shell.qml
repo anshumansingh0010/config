@@ -90,8 +90,8 @@ PanelWindow {
 
     Item {
         id: clockContainer
-        width: 300
-        height: 300
+        width: 280
+        height: 280
         
         // Initial Position: Center of screen
         x: (parent.width - width) / 2
@@ -180,7 +180,7 @@ PanelWindow {
                 id: hoursText
                 text: "12"
                 color: textColor 
-                font.pixelSize: 80
+                font.pixelSize: 70
                 font.bold: true
                 Layout.alignment: Qt.AlignHCenter
             }
@@ -190,7 +190,7 @@ PanelWindow {
                 id: minsText
                 text: "00"
                 color: textColor 
-                font.pixelSize: 80
+                font.pixelSize: 70
                 font.bold: true
                 Layout.alignment: Qt.AlignHCenter
             }

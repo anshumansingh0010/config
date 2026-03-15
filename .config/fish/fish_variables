@@ -1,3 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_HOME:/opt/android\x2dsdk
 SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/opt/android\x2dsdk/platform\x2dtools\x1e/opt/android\x2dsdk/cmdline\x2dtools/latest/bin

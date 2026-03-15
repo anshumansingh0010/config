@@ -1,0 +1,15 @@
+:root {
+  --zen-primary-color: {{colors.primary.default.hex}} !important;
+  --zen-secondary-color: {{colors.secondary.default.hex}} !important;
+  --zen-background-color: {{colors.surface.default.hex}} !important;
+  --zen-foreground-color: {{colors.on_surface.default.hex}} !important;
+  
+  /* Additional colors for better integration */
+  --matugen-primary: {{colors.primary.default.hex}};
+  --matugen-on-primary: {{colors.on_primary.default.hex}};
+  --matugen-secondary: {{colors.secondary.default.hex}};
+  --matugen-on-secondary: {{colors.on_secondary.default.hex}};
+  --matugen-surface: {{colors.surface.default.hex}};
+  --matugen-on-surface: {{colors.on_surface.default.hex}};
+  --matugen-outline: {{colors.outline.default.hex}};
+}
