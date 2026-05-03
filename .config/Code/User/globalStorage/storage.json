@@ -131,8 +131,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/.config/caelestia",
-            "backupPath": "/home/jay/.config/Code/Backups/d93e71a296433fc899298b000a2b9d73",
+            "folder": "file:///home/jay/.config/hypr",
+            "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -141,30 +141,7 @@
                 "height": 1000
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/jay/.config/hypr",
-                "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            },
-            {
-                "folder": "file:///home/jay/.config/caelestia",
-                "backupPath": "/home/jay/.config/Code/Backups/d93e71a296433fc899298b000a2b9d73",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
