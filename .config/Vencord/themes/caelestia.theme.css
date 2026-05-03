@@ -58,7 +58,7 @@ body {
   --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
   --panel-blur: off; /* turn on to blur the background of panels */
   --blur-amount: 12px; /* amount of blur */
-  --bg-floating: #1a1111; /* you can set this to a more opaque color if floating panels look too transparent */
+  --bg-floating: #0c0e12; /* you can set this to a more opaque color if floating panels look too transparent */
   /* chatbar options */
   --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
   --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
@@ -70,28 +70,28 @@ body {
 :root {
   --colors: on; /* turn off to use discord default colors */
   /* text colors */
-  --text-0: #571d1d; /* text on colored elements */
-  --text-1: rgb(242.4, 225.3, 224.4); /* bright text on colored elements */
-  --text-2: rgb(241.7, 223.65, 222.7); /* headings and important text */
-  --text-3: #f1dedd; /* normal text */
-  --text-4: #a08c8b; /* icon buttons and channels */
-  --text-5: #a08c8b; /* muted channels/chats and timestamps */
+  --text-0: #2b415f; /* text on colored elements */
+  --text-1: rgb(228.9, 231.6, 240.6); /* bright text on colored elements */
+  --text-2: rgb(227.45, 230.3, 239.8); /* headings and important text */
+  --text-3: #e2e5ef; /* normal text */
+  --text-4: #71757e; /* icon buttons and channels */
+  --text-5: #71757e; /* muted channels/chats and timestamps */
   /* background and dark colors */
-  --bg-1: #3d3231; /* dark buttons when clicked */
-  --bg-2: #322827; /* dark buttons */
-  --bg-3: #1a1111; /* spacing, secondary elements */
-  --bg-4: #271d1d; /* main background color */
-  --hover: rgba(241, 222, 221, 0.08); /* channels and buttons when hovered */
-  --active: rgba(241, 222, 221, 0.1); /* channels and buttons when clicked or selected */
-  --active-2: rgba(241, 222, 221, 0.2); /* extra state for transparent buttons */
-  --message-hover: rgba(241, 222, 221, 0.08); /* messages when hovered */
+  --bg-1: #22262d; /* dark buttons when clicked */
+  --bg-2: #1c2026; /* dark buttons */
+  --bg-3: #0c0e12; /* spacing, secondary elements */
+  --bg-4: #161a1f; /* main background color */
+  --hover: rgba(226, 229, 239, 0.08); /* channels and buttons when hovered */
+  --active: rgba(226, 229, 239, 0.1); /* channels and buttons when clicked or selected */
+  --active-2: rgba(226, 229, 239, 0.2); /* extra state for transparent buttons */
+  --message-hover: rgba(226, 229, 239, 0.08); /* messages when hovered */
   /* accent colors */
   --accent-1: var(--blue-1); /* links and other accent text */
   --accent-2: var(--blue-2); /* small accent elements */
   --accent-3: var(--blue-3); /* accent buttons */
   --accent-4: var(--blue-4); /* accent buttons when hovered */
   --accent-5: var(--blue-5); /* accent buttons when clicked */
-  --accent-new: #ffb4ab; /* stuff that's normally red like mute/deafen buttons */
+  --accent-new: #fa746f; /* stuff that's normally red like mute/deafen buttons */
   --mention: linear-gradient(
       to right,
       color-mix(in hsl, var(--blue-2), transparent 90%) 40%,
@@ -119,33 +119,33 @@ body {
   --streaming: var(--purple-2); /* change to #593695 for default */
   --offline: var(--text-4); /* change to #83838b for default offline color */
   /* border colors */
-  --border-light: rgba(160, 140, 139, 0); /* light border color */
-  --border: rgba(160, 140, 139, 0.2); /* normal border color */
-  --button-border: rgba(160, 140, 139, 0); /* neutral border color of buttons */
+  --border-light: rgba(113, 117, 126, 0); /* light border color */
+  --border: rgba(113, 117, 126, 0.2); /* normal border color */
+  --button-border: rgba(113, 117, 126, 0); /* neutral border color of buttons */
   /* base colors */
-  --red-1: #ffb4ab;
-  --red-2: rgb(255, 160.9821428571, 149.7);
-  --red-3: rgb(255, 141.9642857143, 128.4);
-  --red-4: rgb(255, 122.9464285714, 107.1);
-  --red-5: rgb(255, 103.9285714286, 85.8);
-  --green-1: #ffd8c5;
-  --green-2: rgb(255, 200.8034482759, 174.4);
-  --green-3: rgb(255, 185.6068965517, 151.8);
-  --green-4: rgb(255, 170.4103448276, 129.2);
-  --green-5: rgb(255, 155.2137931034, 106.6);
-  --blue-1: #ffb3af;
-  --blue-2: rgb(255, 158.575, 153.5);
-  --blue-3: rgb(255, 138.15, 132);
-  --blue-4: rgb(255, 117.725, 110.5);
-  --blue-5: rgb(255, 97.3, 89);
-  --yellow-1: #ffede9;
-  --yellow-2: rgb(255, 217.0363636364, 208.6);
-  --yellow-3: rgb(255, 197.0727272727, 184.2);
-  --yellow-4: rgb(255, 177.1090909091, 159.8);
-  --yellow-5: rgb(255, 157.1454545455, 135.4);
-  --purple-1: #ffa8b9;
-  --purple-2: rgb(255, 146.85, 167.9827586207);
-  --purple-3: rgb(255, 125.7, 150.9655172414);
-  --purple-4: rgb(255, 104.55, 133.9482758621);
-  --purple-5: rgb(255, 83.4, 116.9310344828);
+  --red-1: #fa746f;
+  --red-2: rgb(249.394295302, 99.161409396, 93.555704698);
+  --red-3: rgb(248.788590604, 82.3228187919, 76.111409396);
+  --red-4: rgb(248.182885906, 65.4842281879, 58.667114094);
+  --red-5: rgb(247.5771812081, 48.6456375839, 41.2228187919);
+  --green-1: #bfe5ff;
+  --green-2: rgb(168.7, 219.940625, 255);
+  --green-3: rgb(146.4, 210.88125, 255);
+  --green-4: rgb(124.1, 201.821875, 255);
+  --green-5: rgb(101.8, 192.7625, 255);
+  --blue-1: #b1c8ec;
+  --blue-2: rgb(160.3948453608, 188.2912371134, 231.9551546392);
+  --blue-3: rgb(143.7896907216, 176.5824742268, 227.9103092784);
+  --blue-4: rgb(127.1845360825, 164.8737113402, 223.8654639175);
+  --blue-5: rgb(110.5793814433, 153.1649484536, 219.8206185567);
+  --yellow-1: #d0f9f4;
+  --yellow-2: rgb(187.7367924528, 246.4132075472, 239.2575471698);
+  --yellow-3: rgb(167.4735849057, 243.8264150943, 234.5150943396);
+  --yellow-4: rgb(147.2103773585, 241.2396226415, 229.7726415094);
+  --yellow-5: rgb(126.9471698113, 238.6528301887, 225.0301886792);
+  --purple-1: #a6bfff;
+  --purple-2: rgb(144.95, 175.8629213483, 255);
+  --purple-3: rgb(123.9, 160.7258426966, 255);
+  --purple-4: rgb(102.85, 145.5887640449, 255);
+  --purple-5: rgb(81.8, 130.4516853933, 255);
 }

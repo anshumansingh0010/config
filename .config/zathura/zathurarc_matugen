@@ -1,13 +1,13 @@
 # Zathura Material You Theme
-set default-bg           "#1a1110"
-set default-fg           "#f1dedd"
-set statusbar-bg        "#271d1c"
-set statusbar-fg        "#d8c2bf"
-set inputbar-bg         "#322827"
-set inputbar-fg         "#ffb3ad"
+set default-bg           "#121318"
+set default-fg           "#e3e2e9"
+set statusbar-bg        "#1e1f25"
+set statusbar-fg        "#c5c6d0"
+set inputbar-bg         "#292a2f"
+set inputbar-fg         "#b4c5ff"
 
 # PDF Recoloring (Dark Mode / Midnight Mode)
 set recolor             "true"
-set recolor-lightcolor  "rgba(26, 17, 16, 1)"
-set recolor-darkcolor   "#f1dedd"
+set recolor-lightcolor  "rgba(18, 19, 24, 1)"
+set recolor-darkcolor   "#e3e2e9"
 set recolor-keephue     "true" 

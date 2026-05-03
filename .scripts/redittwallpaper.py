@@ -31,9 +31,12 @@ download_folder = os.path.expanduser(download_folder)
 
 
 for post in posts:
-    source = post.attrs['href']
+    source = post.attrs.get('href', '')  # Ensure source is a string
+    if not isinstance(source, str):
+        print("Invalid source attribute, skipping post.")
+        continue
     full_url = url_base + source
-    
+
     try:
         html_page2 = requests.get(full_url)
         html_page2.raise_for_status()
@@ -41,68 +44,77 @@ for post in posts:
     except requests.exceptions.RequestException as t:
         print(f"Error fetching HTML page: {t}")
         continue
-    
+
     soup2 = BeautifulSoup(html_page2.content, 'html.parser')
-    shreddit_title_tag = soup2.find('shreddit-title')  # Find <shreddit-title>-Tag
-    
+    shreddit_title_tag = soup2.find('shreddit-title')
+
     if shreddit_title_tag:
         title = shreddit_title_tag.get('title')
-        title_without_brackets = re.sub(r'\[.*?\]', '', title)  # Remove [..] and image size from title
+        if not isinstance(title, str):
+            print("Invalid title attribute, skipping post.")
+            continue
+        title_without_brackets = re.sub(r'\[.*?\]', '', title)
         split_title = title_without_brackets.split(':')
-        
+
         if len(split_title) > 1:
             desired_part = split_title[0].strip()
         else:
             print("Can't find colon")
             desired_part = f"generic_title_{datetime.now().strftime('%Y-%m-%d')}"
-            
     else:
         print("Can't find <shreddit-title>-Tag.")
         desired_part = f"generic_title_{datetime.now().strftime('%Y-%m-%d')}"
-    
-    desired_part = desired_part.replace(',', '_').replace("'", '')  # Replace commas and apostrophes
-    
-    # Clean up the desired_part to remove any invalid characters
+
+    desired_part = desired_part.replace(',', '_').replace("'", '')
     desired_part = re.sub(r'[<>:"/\\|?*]', '_', desired_part)
-    
-    download_folder = r'X:\Photos\Wallpapers\Reddit'  # configure for yourself
-    current_date = datetime.now().strftime('%Y-%m-%d')  # Format: YYYY-MM-DD
-    
-    # Get the image URL from the post page
+
+    download_folder = r'X:\Photos\Wallpapers\Reddit'
+    current_date = datetime.now().strftime('%Y-%m-%d')
+
     try:
         html_post_page = requests.get(full_url)
         html_post_page.raise_for_status()
         post_soup = BeautifulSoup(html_post_page.content, 'html.parser')
         element2 = post_soup.find('div', class_="max-h-[100vw] h-full w-full object-contain overflow-hidden relative bg-black")
-        
+
         if element2:
             a_element = element2.find('a')
-            full_img = a_element.attrs['href']
+            if a_element and 'href' in a_element.attrs:
+                full_img = a_element.attrs['href']
+                if not isinstance(full_img, str):
+                    print("Invalid image URL, skipping post.")
+                    continue
+            else:
+                print("Post with 2 or more Images, moving to next post.")
+                continue
         else:
             print("Post with 2 or more Images, moving to next post.")
-            continue  # Skip this post if 2 or more Images
-        
+            continue
+
         file_name = os.path.join(download_folder, f"{desired_part}_{current_date}.png")
-        
+
         try:
             r = requests.get(full_img, stream=True)
             r.raise_for_status()
-            
+
             with open(file_name, 'wb') as f:
                 r.raw.decode_content = True
                 shutil.copyfileobj(r.raw, f)
                 print(f"Downloading wallpaper: {desired_part} ({current_date})")
-            
+
             SPI_SETDESKWALLPAPER = 20
             WALLPAPER_PATH = file_name
-            
-            try:
-                ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, WALLPAPER_PATH, 3)
-                print("Wallpaper change successful!")
-                break
-            except:
-                print("Wallpaper change failed!")
-                break
+
+            if os.name == 'nt':  # Check if the OS is Windows
+                try:
+                    ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, WALLPAPER_PATH, 3)
+                    print("Wallpaper change successful!")
+                    break
+                except Exception as e:
+                    print(f"Wallpaper change failed: {e}")
+                    break
+            else:
+                print("Wallpaper change is only supported on Windows.")
         except requests.exceptions.RequestException as e:
             print(f"Error downloading image: {e}")
             continue

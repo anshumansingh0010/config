@@ -10,6 +10,7 @@ if status is-interactive
     alias ls='eza --icons --group-directories-first -1'
     alias gitbackup="~/.scripts/gitpush.sh"
     alias rm="trash-put"
+    alias run="/home/jay/Codeforces/run.sh"
     alias lively="~/.scripts/mpvpaper/set_video_wallpaper.sh"	
     set -Ux ANDROID_HOME /opt/android-sdk
     fish_add_path /opt/android-sdk/cmdline-tools/latest/bin

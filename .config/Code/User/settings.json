@@ -41,21 +41,21 @@
     "window.menuStyle": "custom",
     "window.titleBarStyle": "native",
     "[dockercompose]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[chatagent]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[yaml]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[prompt]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[instructions]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "[cpp]": {
         
         "editor.wordBasedSuggestions": "off",
@@ -67,7 +67,6 @@
     "hexeditor.showDecodedText": true,
     "hexeditor.defaultEndianness": "little",
     "hexeditor.inspectorType": "aside",
-    "files.autoSave": "afterDelay",
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     "editor.minimap.enabled": false,
     "files.associations": {
@@ -92,5 +91,41 @@
         "{hexdiff}:/**/*.*": "hexEditor.hexedit",
         "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
         "*.qrc": "qt-core.qrcEditor"
-    }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "github.copilot.selectedCompletionModel": "",
+    "chat.viewSessions.orientation": "stacked",
+    "qt-qml.doNotAskForQmllsDownload": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "chat.unifiedAgentsBar.enabled": true,
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://ui.shadcn.com": true,
+        "https://www.schemastore.org/": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "extensions.experimental.affinity": {
+        "ms-toolsai.jupyter": 1,
+        "ms-toolsai.jupyter-renderers": 1,
+        "ms-python.python": 1,
+        "ms-python.vscode-pylance": 1
+    },
+    "python.terminal.useEnvFile": true
 }

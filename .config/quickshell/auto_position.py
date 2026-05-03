@@ -1,8 +1,9 @@
 import sys
 import os
 from PIL import Image, ImageFilter
+from typing import List, Any, cast
 
-WIDGET_SIZE = 300
+WIDGET_SIZE = 320
 SCREEN_W = 1920
 SCREEN_H = 1080
 PADDING = 50
@@ -28,9 +29,9 @@ def find_best_spot(wallpaper_path):
         small_w = int(SCREEN_W * scale)
         small_h = int(SCREEN_H * scale)
 
-        small_edges = edges.resize((small_w, small_h), resample=Image.BILINEAR)
-
-        pixels = list(small_edges.getdata())
+        small_edges = edges.resize((small_w, small_h), resample=Image.Resampling.BILINEAR)
+        
+        pixels = list(cast(List[Any], small_edges.getdata()))
         width = small_w
 
         w_scaled = int(WIDGET_SIZE * scale)

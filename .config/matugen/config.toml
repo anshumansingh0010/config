@@ -20,3 +20,11 @@ output_path = '~/.config/zathura/zathurarc_matugen'
 [templates.zen]
 input_path = '/home/jay/.config/matugen/templates/zen-colors.css'
 output_path = '/home/jay/.zen/2w455a8z.Default (release)/chrome/colors.css'
+
+[templates.gtk3]
+#input_path = '~/.config/matugen/templates/gtk.css'
+#output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+#input_path = '~/.config/matugen/templates/gtk.css'
+#output_path = '~/.config/gtk-4.0/gtk.css'
