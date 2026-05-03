@@ -9,7 +9,7 @@
                 "folderUri": "file:///home/jay/.config/hypr"
             },
             {
-                "folderUri": "file:///home/jay/.config/caelestia"
+                "folderUri": "file:///home/jay/.config/mpv"
             }
         ],
         "emptyWindows": []
@@ -99,7 +99,8 @@
             "file:///home/jay/.config/cava": "__default__profile__",
             "file:///home/jay/project/Compiler-for-mercury-Lang": "__default__profile__",
             "file:///home/jay/tmptasks/Stock_Sense": "__default__profile__",
-            "file:///home/jay/Downloads/Archives/jackett-str-addon": "__default__profile__"
+            "file:///home/jay/Downloads/Archives/jackett-str-addon": "__default__profile__",
+            "file:///home/jay/.config/mpv": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -124,7 +125,7 @@
             "titleBarHeight": 35,
             "activityBarWidth": 48,
             "sideBarWidth": 170,
-            "auxiliaryBarWidth": 0,
+            "auxiliaryBarWidth": 492,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -148,10 +149,6 @@
             "sideBarWidth": 170,
             "auxiliaryBarWidth": 492,
             "workspaces": {
-                "4a6ac8be40e005f3196da5ad0f8c3251": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "1f6c451e7fd6748dd653b7454e294dbf": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -345,6 +342,10 @@
                     "auxiliaryBarVisible": true
                 },
                 "53bb0f49e6bc66a9d5777e0829d1be59": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "89c242166cfc0027339175af38855552": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
                 }
