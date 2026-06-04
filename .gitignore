@@ -11,6 +11,7 @@
 .config/Antigravity/User/globalStorage/state.vscdb
 .vscode/extensions
 .vscode/workspaceStorage
+.config/mozilla/*
 
 .idea/
 *.log
