@@ -3,7 +3,6 @@ command = "caelestia"
 arguments = ["wallpaper", "-f"]
 set = false
 
-
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/colors.css'
@@ -12,7 +11,7 @@ post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings s
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/colors.css'
- 
+
 [templates.zathura]
 input_path = '~/.config/matugen/templates/zathura'
 output_path = '~/.config/zathura/zathurarc_matugen'
@@ -20,11 +19,3 @@ output_path = '~/.config/zathura/zathurarc_matugen'
 [templates.zen]
 input_path = '/home/jay/.config/matugen/templates/zen-colors.css'
 output_path = '/home/jay/.zen/2w455a8z.Default (release)/chrome/colors.css'
-
-[templates.gtk3]
-#input_path = '~/.config/matugen/templates/gtk.css'
-#output_path = '~/.config/gtk-3.0/gtk.css'
-
-[templates.gtk4]
-#input_path = '~/.config/matugen/templates/gtk.css'
-#output_path = '~/.config/gtk-4.0/gtk.css'

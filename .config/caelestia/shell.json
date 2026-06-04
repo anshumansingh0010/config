@@ -615,6 +615,10 @@
             "enabled": false,
             "provider": [
                 {
+                    "displayName": null,
+                    "enabled": null,
+                    "interface": null,
+                    "name": null
                 }
             ]
         }

@@ -25,6 +25,8 @@ inode/chardevice=code.desktop
 application/zip=org.gnome.FileRoller.desktop
 application/x-7z-compressed=org.gnome.FileRoller.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
+text/vnd.trolltech.linguist=code.desktop
+x-scheme-handler/antigravity=antigravity.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -44,3 +46,4 @@ x-scheme-handler/chrome=zen.desktop;
 application/zip=org.gnome.FileRoller.desktop;
 application/x-7z-compressed=org.gnome.FileRoller.desktop;
 application/pdf=thunar.desktop;zen.desktop;org.pwmt.zathura-pdf-poppler.desktop;
+text/vnd.trolltech.linguist=code.desktop;

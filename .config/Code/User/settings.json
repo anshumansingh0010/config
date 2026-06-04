@@ -71,7 +71,7 @@
     "editor.minimap.enabled": false,
     "files.associations": {
         "*.{a80,z80,asm,inc,s}": "asm-collection",
-        "*.{list,lis}": "asm-collection-list"
+        "*.{list,lis}": "asm-list-file"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -127,5 +127,6 @@
         "ms-python.python": 1,
         "ms-python.vscode-pylance": 1
     },
-    "python.terminal.useEnvFile": true
+    "python.terminal.useEnvFile": true,
+    "workbench.editor.empty.hint": "hidden"
 }

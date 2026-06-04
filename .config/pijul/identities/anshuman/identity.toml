@@ -1,0 +1,9 @@
+display_name = "amshuman"
+email = "anshumansingh0010@gmail.com"
+last_modified = "2026-05-08T22:59:04.261613196Z"
+
+[public_key]
+version = 0
+algorithm = "Ed25519"
+signature = "34AZJgaqcdeqfBrkRD6pbjTqSSn9JMEmokPuqBJLiDRBn7P1mDWfPu69CMhxwMyLqPifAdb7PpwmuiCz9XEtRg5G"
+key = "H39oY25ymcwyqpB41qpf4UQJ7osHUJqc3B3EwrMw8rNn"
