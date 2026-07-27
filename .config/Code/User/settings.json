@@ -70,8 +70,7 @@
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     "editor.minimap.enabled": false,
     "files.associations": {
-        "*.{a80,z80,asm,inc,s}": "asm-collection",
-        "*.{list,lis}": "asm-list-file"
+        "*.{asm,inc,s,nasm,yasm,-----------------------------------------}": "asm-x86-nasm"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -128,5 +127,7 @@
         "ms-python.vscode-pylance": 1
     },
     "python.terminal.useEnvFile": true,
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "asm-code-lens.assembler": "nasm (x86)",
+    "explorer.confirmDelete": false
 }

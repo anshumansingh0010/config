@@ -30,15 +30,16 @@ PanelWindow {
         running: true
         command: ["sh", "-c", "
             extract() { 
-                bg=$(grep '^\\$background =' /home/jay/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
-                fg=$(grep '^\\$primary =' /home/jay/.config/hypr/scheme/current.conf | cut -d'=' -f2 | tr -d ' ')
-                res=$(hyprctl monitors -j | jq -r '.[0] | \"\\(.width) \\(.height)\"')
+                bg=$(grep -E '^\\s*background\\s*=' /home/jay/.config/hypr/scheme/current.lua | cut -d'\"' -f2)
+                fg=$(grep -E '^\\s*primary\\s*=' /home/jay/.config/hypr/scheme/current.lua | cut -d'\"' -f2)
+                raw_res=$(hyprctl monitors -j 2>/dev/null | jq -r '.[0] | \"\\(.width) \\(.height)\"' 2>/dev/null)
+                if [ -z \"$raw_res\" ] || [ \"$raw_res\" = \"null null\" ]; then res=\"1920 1080\"; else res=\"$raw_res\"; fi
                 coords=$(python3 /home/jay/.config/quickshell/auto_position.py $res)
                 echo \"$bg $fg $coords\"
             }
             extract
             inotifywait -m -e close_write -q --format '%f' /home/jay/.config/hypr/scheme/ | while read -r file; do
-                if [ \"$file\" = \"current.conf\" ]; then extract; fi
+                if [ \"$file\" = \"current.lua\" ]; then extract; fi
             done
         "]
 
@@ -192,4 +193,4 @@ PanelWindow {
             }
         }
     }
-}
+} 

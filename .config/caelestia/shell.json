@@ -6,15 +6,27 @@
             }
         },
         "font": {
-            "family": {
-                "clock": "Rubik",
-                "material": "Material Symbols Rounded",
-                "mono": "CaskaydiaCove NF",
-                "sans": "Rubik"
+            "body": {
+                "family": "Rubik"
             },
-            "size": {
-                "scale": 1
-            }
+            "clock": "Rubik",
+            "headline": {
+                "family": "Rubik"
+            },
+            "icon": {
+                "family": "Material Symbols Rounded"
+            },
+            "label": {
+                "family": "Rubik"
+            },
+            "mono": {
+                "family": "CaskaydiaCove NF"
+            },
+            "scale": 1,
+            "title": {
+                "family": "Rubik"
+            },
+            "workspaces": "Rubik"
         },
         "padding": {
             "scale": 0.96
@@ -23,11 +35,11 @@
             "scale": 1.19
         },
         "spacing": {
-            "scale": 0.97
+            "scale": 0.6097402046822212
         },
         "transparency": {
             "base": 0.85,
-            "enabled": false,
+            "enabled": true,
             "layers": 0.3
         }
     },
@@ -56,7 +68,7 @@
             "rounding": 1,
             "spacing": 1
         },
-        "wallpaperEnabled": true
+        "wallpaperEnabled": false
     },
     "bar": {
         "activeWindow": {
@@ -166,7 +178,7 @@
     },
     "border": {
         "rounding": 18,
-        "thickness": 4
+        "thickness": 1
     },
     "dashboard": {
         "dragThreshold": 50,
@@ -522,7 +534,6 @@
                 "to": "YT Music"
             }
         ],
-        "showLyrics": true,
         "smartScheme": true,
         "useFahrenheit": true,
         "useFahrenheitPerformance": true,
@@ -604,7 +615,7 @@
             "chargingChanged": true,
             "configLoaded": true,
             "dndChanged": true,
-            "fullscreen": "off",
+            "fullscreen": "all",
             "gameModeChanged": true,
             "kbLayoutChanged": true,
             "nowPlaying": false,

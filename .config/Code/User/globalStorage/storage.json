@@ -1,23 +1,13 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "b185ea15bb89fd3c2fda6c4c9dc48ef5ec120861c85ee846939277160c7e1a91",
-    "telemetry.devDeviceId": "99ae8845-4f57-4b04-93ec-0c4082cc93bf",
+    "telemetry.devDeviceId": "99abdd3f-45d0-4eb8-8643-a4a51f88e0f7",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
-            {
-                "folderUri": "file:///home/jay/Codeforces"
-            },
-            {
-                "folderUri": "file:///home/jay/.config/hypr"
-            },
-            {
-                "folderUri": "file:///home/jay/.scripts"
-            }
-        ],
+        "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1780588838188"
+                "backupFolder": "1785141908974"
             }
         ]
     },
@@ -116,7 +106,7 @@
             "file:///home/jay/.config/kitty": "__default__profile__"
         },
         "emptyWindows": {
-            "1780588838188": "__default__profile__"
+            "1785141908974": "__default__profile__"
         }
     },
     "theme": "vs-dark",
@@ -131,6 +121,10 @@
             "titleBarBackground": "#1e1f1c",
             "activityBarBackground": "#272822",
             "sideBarBackground": "#1e1f1c",
+            "panelBackground": "#272822",
+            "editorGroupBorder": "#34352f",
+            "agentsPanelBackground": "#1e1f1c",
+            "agentsPanelBorder": "#414339",
             "statusBarBackground": "#414339",
             "statusBarNoFolderBackground": "#414339"
         },
@@ -139,74 +133,32 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
+            "sideBarWidth": 0,
             "auxiliaryBarWidth": 0,
             "statusBarHeight": 22,
-            "windowBorder": false
+            "windowBorder": false,
+            "modernUI": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/.scripts",
-            "backupPath": "/home/jay/.config/Code/Backups/e6518b8d769fa28594da7c9072377544",
+            "backupPath": "/home/jay/.config/Code/Backups/1785141908974",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 764,
-                "height": 976
+                "width": 1600,
+                "height": 1000,
+                "zoomLevel": 1
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/jay/Codeforces",
-                "backupPath": "/home/jay/.config/Code/Backups/3683e6c11ebc2e934f1690bbe87468d2",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000,
-                    "zoomLevel": 1
-                }
-            },
-            {
-                "folder": "file:///home/jay/.config/hypr",
-                "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1600,
-                    "height": 1000
-                }
-            },
-            {
-                "folder": "file:///home/jay/.scripts",
-                "backupPath": "/home/jay/.config/Code/Backups/e6518b8d769fa28594da7c9072377544",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 764,
-                    "height": 976
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
             "sideBarWidth": 170,
             "auxiliaryBarWidth": 170,
             "workspaces": {
-                "eb4e3bc5696f4c748c2045743e1e2719": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "d1f61509bf373eb9b9b88ec174ec7206": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "8bb60e8dc08cfc3d057df172d34ab6d0": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -396,6 +348,14 @@
                     "auxiliaryBarVisible": false
                 },
                 "258f0d8862e6e6a7ab718b4845037640": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4e9b78ecf3aa1873b8f9a0a3db03025d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "f1926dffa5e0ad19e92d3489383b9edb": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }

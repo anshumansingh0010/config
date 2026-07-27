@@ -387,3 +387,12 @@
 {"timestamp":15938083,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1780474659449","glean.startup.date":"2026-06-03T13:47+05:30"},"execution_counter":57}
 {"timestamp":28176844,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1780486898211","glean.startup.date":"2026-06-03T17:11+05:30"},"execution_counter":58}
 {"timestamp":45732710,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-06-03T22:04+05:30","glean_timestamp":"1780504454077"},"execution_counter":59}
+{"timestamp":45435571,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1781100832757","glean.startup.date":"2026-06-10T19:43+05:30"},"execution_counter":60}
+{"timestamp":9596137,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-06-17T10:41+05:30","glean_timestamp":"1781673100862"},"execution_counter":61}
+{"timestamp":36832300,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-04T21:59+05:30","glean_timestamp":"1783182552925"},"execution_counter":62}
+{"timestamp":35796753,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-12T20:19+05:30","glean_timestamp":"1783867785515"},"execution_counter":63}
+{"timestamp":309187,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-22T18:32+05:30","glean_timestamp":"1784725324986"},"execution_counter":64}
+{"timestamp":2338623,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-25T22:49+05:30","glean_timestamp":"1784999969095"},"execution_counter":65}
+{"timestamp":38623562,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-26T22:17+05:30","glean_timestamp":"1785084456573"},"execution_counter":66}
+{"timestamp":87058245,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1785132892076","glean.startup.date":"2026-07-27T11:44+05:30"},"execution_counter":67}
+{"timestamp":918555,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-07-27T12:29+05:30","glean_timestamp":"1785135540332"},"execution_counter":68}

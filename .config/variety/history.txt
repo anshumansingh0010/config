@@ -1,3 +1,8 @@
 0
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jr129.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gw2587.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ly2ddy.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d8w3gj.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrlg1r.jpg
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-og2yem.jpg
 /usr/share/backgrounds/gnome/adwaita-l.jxl
+/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jr129.jpg
