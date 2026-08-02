@@ -1,36 +1,56 @@
 #!/usr/bin/env python3
-import json
-import os
-from pathlib import Path
 import subprocess
 import sys
+
 def execute(command):
-    return subprocess.run(['bash', '-c',command],capture_output=True,text=True)
-def arg(i:int):
+    return subprocess.run(['bash', '-c', command], capture_output=True, text=True)
+
+def arg(i: int):
     return sys.argv[i]
 
 def getshadernames():
-    path=Path.home()/".config/hypr/shaders"
-    
-    files = list(os.listdir(path))
-    shadername=[f.removesuffix(".glsl") for f in files]
-    
-    return shadername
-    
+    """Get available shader names from hyprshade ls."""
+    result = subprocess.run(['hyprshade', 'ls'], capture_output=True, text=True)
+    if result.returncode != 0:
+        return []
+    # Strip leading '* ' active-marker that hyprshade ls may print
+    shaders = [s.strip().lstrip('* ').strip() for s in result.stdout.strip().split('\n') if s.strip()]
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for s in shaders:
+        if s not in seen:
+            seen.add(s)
+            unique.append(s)
+    return unique
+
+def get_current_shader():
+    """Return the currently active shader name, or empty string if none."""
+    result = subprocess.run(['hyprshade', 'current'], capture_output=True, text=True)
+    return result.stdout.strip()
 
 def main():
-    shaders=(getshadernames())
-    print(shaders)
-    if len(sys.argv) > 1 and arg(1) =='toggle':
-        if  execute("hyprshade current").stdout:
-            execute("hyprshade off")
+    shaders = getshadernames()
+    if not shaders:
+        print("No shaders available.")
+        return
 
+    print(shaders)
+    current = get_current_shader()
+
+    if len(sys.argv) > 1 and arg(1) == 'toggle':
+        # Toggle vibrance on/off
+        if current:
+            execute("hyprshade off")
         else:
             execute("hyprshade on vibrance")
     else:
-        
-        idx=(shaders.index(execute("hyprshade current").stdout.strip()))+1
-        idx=(idx)%len(shaders)
+        # Cycle to the next shader
+        if current and current in shaders:
+            idx = (shaders.index(current) + 1) % len(shaders)
+        else:
+            idx = 0
         execute(f"hyprshade on {shaders[idx]}")
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()

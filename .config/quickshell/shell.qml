@@ -22,24 +22,36 @@ PanelWindow {
         item: clockContainer
     }
 
-    property string bgColor: "#1e0f0f"
-    property string textColor: "#ffffff"
+    property string bgColor: "#121415"
+    property string textColor: "#bde0f0"
+
+    function updateTime() {
+        var date = new Date()
+        hoursText.text = Qt.formatTime(date, "hh")
+        minsText.text = Qt.formatTime(date, "mm")
+    }
+
+    Component.onCompleted: updateTime()
 
     Process {
         id: colorReader
         running: true
         command: ["sh", "-c", "
             extract() { 
-                bg=$(grep -E '^\\s*background\\s*=' /home/jay/.config/hypr/scheme/current.lua | cut -d'\"' -f2)
-                fg=$(grep -E '^\\s*primary\\s*=' /home/jay/.config/hypr/scheme/current.lua | cut -d'\"' -f2)
-                raw_res=$(hyprctl monitors -j 2>/dev/null | jq -r '.[0] | \"\\(.width) \\(.height)\"' 2>/dev/null)
-                if [ -z \"$raw_res\" ] || [ \"$raw_res\" = \"null null\" ]; then res=\"1920 1080\"; else res=\"$raw_res\"; fi
-                coords=$(python3 /home/jay/.config/quickshell/auto_position.py $res)
+                sleep 0.3
+                bg=$(grep -E '^\\s*background\\s*=' /home/jay/.config/hypr/scheme/current.lua 2>/dev/null | cut -d'\"' -f2)
+                fg=$(grep -E '^\\s*primary\\s*=' /home/jay/.config/hypr/scheme/current.lua 2>/dev/null | cut -d'\"' -f2)
+                raw_res=$(hyprctl monitors -j 2>/dev/null | jq -r '.[0] | \"\\((.width / .scale) | round) \\((.height / .scale) | round)\"' 2>/dev/null)
+                if [ -z \"$raw_res\" ] || [ \"$raw_res\" = \"null null\" ]; then res=\"1600 1000\"; else res=\"$raw_res\"; fi
+                coords=$(python3 /home/jay/.config/quickshell/auto_position.py $res 2>/dev/null)
                 echo \"$bg $fg $coords\"
             }
             extract
-            inotifywait -m -e close_write -q --format '%f' /home/jay/.config/hypr/scheme/ | while read -r file; do
-                if [ \"$file\" = \"current.lua\" ]; then extract; fi
+            while true; do
+                inotifywait -e close_write,moved_to,create,modify -q --format '%f' /home/jay/.config/hypr/scheme/ /home/jay/.local/state/caelestia/wallpaper/ 2>/dev/null | while read -r file; do
+                    if [ \"$file\" = \"current.lua\" ] || [ \"$file\" = \"path.txt\" ]; then extract; fi
+                done
+                sleep 0.5
             done
         "]
 
@@ -47,8 +59,8 @@ PanelWindow {
             onRead: function(data) {
                 var parts = data.trim().split(" ")
                 if (parts.length >= 4) {
-                    var bg = parts[0].trim()
-                    var fg = parts[1].trim()
+                    var bg = parts[0].trim().replace(/^#/, "")
+                    var fg = parts[1].trim().replace(/^#/, "")
                     var x = parseInt(parts[2])
                     var y = parseInt(parts[3])
 
@@ -70,11 +82,7 @@ PanelWindow {
         interval: 1000
         running: true
         repeat: true
-        onTriggered: {
-            var date = new Date()
-            hoursText.text = Qt.formatTime(date, "hh")
-            minsText.text = Qt.formatTime(date, "mm")
-        }
+        onTriggered: root.updateTime()
     }
 
     Item {
@@ -168,7 +176,7 @@ PanelWindow {
 
             Text {
                 id: hoursText
-                text: "12"
+                text: ""
                 color: textColor
                 font.pixelSize: 80
                 font.bold: true
@@ -181,7 +189,7 @@ PanelWindow {
 
             Text {
                 id: minsText
-                text: "00"
+                text: ""
                 color: textColor
                 font.pixelSize: 80
                 font.bold: true
@@ -193,4 +201,7 @@ PanelWindow {
             }
         }
     }
-} 
+}
+
+
+ 

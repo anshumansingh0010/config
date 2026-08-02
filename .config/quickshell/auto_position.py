@@ -3,7 +3,7 @@ import os
 from PIL import Image, ImageFilter
 from typing import List, Any, cast
 
-WIDGET_SIZE = 320
+WIDGET_SIZE = 300
 SCREEN_W = 1920
 SCREEN_H = 1080
 PADDING = 50
@@ -31,7 +31,12 @@ def find_best_spot(wallpaper_path):
 
         small_edges = edges.resize((small_w, small_h), resample=Image.Resampling.BILINEAR)
         
-        pixels = list(cast(List[Any], small_edges.getdata()))
+        if hasattr(small_edges, "get_flattened_data"):
+            pixels: List[int] = cast(List[int], list(small_edges.get_flattened_data()))
+        else:
+            raw_data: Any = small_edges.getdata()
+            pixels = cast(List[int], list(raw_data))
+
         width = small_w
 
         w_scaled = int(WIDGET_SIZE * scale)
@@ -50,8 +55,8 @@ def find_best_spot(wallpaper_path):
 
         step = 5
 
-        for y in range(min_y_s, max_y_s - h_scaled, step):
-            for x in range(min_x_s, max_x_s - w_scaled, step):
+        for y in range(min_y_s, max_y_s + 1, step):
+            for x in range(min_x_s, max_x_s + 1, step):
                 energy = 0
                 for by in range(0, h_scaled, 2):
                     row_off = (y + by) * width
@@ -89,3 +94,4 @@ if __name__ == "__main__":
         print(x, y)
     else:
         print(PADDING, PADDING)
+

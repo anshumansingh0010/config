@@ -2,7 +2,11 @@
 import subprocess
 import json
 
-def toggle_nobar_tag():
+def eval_lua(code):
+    """Run a Lua snippet via hyprctl eval."""
+    return subprocess.run(['hyprctl', 'eval', code], capture_output=True, text=True)
+
+def toggle_hyprbars():
     try:
         # 1. Fetch the active window data safely
         result = subprocess.run(['hyprctl', '-j', 'activewindow'], capture_output=True, text=True)
@@ -15,13 +19,13 @@ def toggle_nobar_tag():
         if not window_address:
             return
 
-        # 2. Toggle the 'nobar' tag natively
-        # Leaving out '+' or '-' tells Hyprland to automatically handle the toggle state.
-        # We pass it as a single explicit command string so the shell processes the space correctly.
-        subprocess.run(f"hyprctl dispatch tagwindow nobar address:{window_address}", shell=True)
+        # 2. Use the Hyprland Lua API to toggle the hyprbars dynamic rule for this specific window address.
+        #    This tells the compositor to inject the rule dynamically to toggle the visibility of the titlebar.
+        lua_code = f"hl.dispatch(hl.dsp.exec_cmd('windowrule plugin:hyprbars:nobar, address:{window_address}'))"
+        eval_lua(lua_code)
 
     except (json.JSONDecodeError, FileNotFoundError):
         pass
 
 if __name__ == "__main__":
-    toggle_nobar_tag()
+    toggle_hyprbars()

@@ -5,6 +5,10 @@ import subprocess
 def execute(command):
     return subprocess.run(['bash', '-c', command], capture_output=True, text=True)
 
+def eval_lua(code):
+    """Run a Lua snippet via hyprctl eval."""
+    return subprocess.run(['hyprctl', 'eval', code], capture_output=True, text=True)
+
 # 1. Get the current active window JSON data safely
 window_data_raw = execute('hyprctl -j activewindow')
 if not window_data_raw.stdout.strip():
@@ -23,21 +27,15 @@ current_tagset = {tag: (1 if tag in active_tags else 0) for tag in all_tags}
 sorted_keys = sorted(current_tagset.keys())
 for key in sorted_keys:
     if current_tagset[key] == 1:
-        current_tagset[key] = 0   
+        current_tagset[key] = 0
     else:
         current_tagset[key] = 1
         break  # Move to next state and break out of binary increment
 
-# 4. Build batch commands using the space separator that worked in your other script
-batch_commands = []
+# 4. Build and run eval calls for each tag using the Lua hl.dsp.window.tag API
 for key in sorted_keys:
     sign = "+" if current_tagset[key] == 1 else "-"
-    
-    # CHANGED: Replaced the comma with a space to match your working script's behavior
-    batch_commands.append(f"dispatch tagwindow {sign}{key} address:{window_address}")
+    lua_code = f"hl.dispatch(hl.dsp.window.tag({{ tag = '{sign}{key}', window = 'address:{window_address}' }}))"
+    eval_lua(lua_code)
 
-# 5. Send everything to hyprctl in a single batch call
-full_command = " ; ".join(batch_commands)
-subprocess.run(['hyprctl', '--batch', full_command])
-
-print("Window tags updated successfully via batch execution.")
+print("Window tags updated successfully.")

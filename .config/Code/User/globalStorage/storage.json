@@ -4,12 +4,12 @@
     "telemetry.devDeviceId": "99abdd3f-45d0-4eb8-8643-a4a51f88e0f7",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1785141908974"
+                "folderUri": "file:///home/jay/.config/hypr"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -103,11 +103,11 @@
             "file:///home/jay/tmptasks/pijul": "__default__profile__",
             "file:///home/jay/tmptasks/pijul/first": "__default__profile__",
             "file:///home/jay/tmptasks/stcli": "__default__profile__",
-            "file:///home/jay/.config/kitty": "__default__profile__"
+            "file:///home/jay/.config/kitty": "__default__profile__",
+            "file:///home/jay/Desktop/Machine%20Learnig": "__default__profile__",
+            "file:///home/jay/Desktop/Artificial%20Intelligence/AI_lab": "__default__profile__"
         },
-        "emptyWindows": {
-            "1785141908974": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "theme": "vs-dark",
     "themeBackground": "#272822",
@@ -132,45 +132,59 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
-            "activityBarWidth": 48,
-            "sideBarWidth": 0,
-            "auxiliaryBarWidth": 0,
-            "statusBarHeight": 22,
+            "activityBarWidth": 40,
+            "sideBarWidth": 188,
+            "auxiliaryBarWidth": 188,
+            "statusBarHeight": 32,
             "windowBorder": false,
-            "modernUI": false
+            "modernUI": true,
+            "partBounds": {
+                "sideBar": {
+                    "top": 35,
+                    "left": 43.99739456176758,
+                    "width": 182.0052032470703,
+                    "height": 700.6510009765625
+                },
+                "auxiliaryBar": {
+                    "top": 35,
+                    "left": 1338.997314453125,
+                    "width": 176.00259399414062,
+                    "height": 907.65625
+                },
+                "panel": {
+                    "top": 741.9921875,
+                    "left": 43.99739456176758,
+                    "width": 1289.0103759765625,
+                    "height": 200.65103149414062
+                },
+                "editor": {
+                    "top": 35,
+                    "left": 231.9921875,
+                    "width": 1101.0025634765625,
+                    "height": 700.6640625
+                }
+            }
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/jay/.config/Code/Backups/1785141908974",
+            "folder": "file:///home/jay/.config/hypr",
+            "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
             "uiState": {
                 "mode": 0,
                 "x": 0,
                 "y": 0,
                 "width": 1600,
-                "height": 1000,
-                "zoomLevel": 1
+                "height": 1000
             }
         },
         "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
-            "sideBarWidth": 170,
-            "auxiliaryBarWidth": 170,
+            "sideBarWidth": 188,
+            "auxiliaryBarWidth": 188,
             "workspaces": {
-                "8bb60e8dc08cfc3d057df172d34ab6d0": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "e89f36ff4dcae14bf7fd950bd3662287": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
-                "0e62b340d96c6b2a3bc4b455e1c2427f": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "19678da0698c08d42ad795aa0bc292ac": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -232,7 +246,7 @@
                     "auxiliaryBarVisible": false
                 },
                 "d18a4a589718ac3e5629926ae514eead": {
-                    "sideBarVisible": true,
+                    "sideBarVisible": false,
                     "auxiliaryBarVisible": false
                 },
                 "24ca2a8a58db6d229fdd072e8a1ae47d": {
@@ -358,6 +372,18 @@
                 "f1926dffa5e0ad19e92d3489383b9edb": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
+                },
+                "7f1e01a8df892b0c7cffaf957755d7cb": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "1d7f39102dbb90bdff9376159cf00a65": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "b1eda3f9b6e8b3e905db31e8430d0ac9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
                 }
             }
         }

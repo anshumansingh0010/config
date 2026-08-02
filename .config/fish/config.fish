@@ -1,13 +1,13 @@
 if status is-interactive
     # Starship custom prompt
-    starship init fish | source
+    command -v starship &> /dev/null && starship init fish | source
 
     # Direnv + Zoxide
     command -v direnv &> /dev/null && direnv hook fish | source
     command -v zoxide &> /dev/null && zoxide init fish --cmd cd | source
 
     # Better ls
-    alias ls='eza --icons --group-directories-first -1'
+    command -v eza &> /dev/null && alias ls='eza --icons --group-directories-first -1'
     alias gitbackup="~/.scripts/gitpush.sh"
     alias rm="trash-put"
     alias run="/home/jay/Codeforces/run.sh"
@@ -17,6 +17,7 @@ if status is-interactive
     fish_add_path /opt/android-sdk/platform-tools
     
     # Abbrs
+    abbr lg 'lazygit'
     abbr gd 'git diff'
     abbr ga 'git add .'
     abbr gc 'git commit -am'
@@ -38,8 +39,6 @@ if status is-interactive
     abbr la 'ls -a'
     abbr lla 'ls -la'
 
-    zoxide init fish --cmd cd | source
-    
     # Custom colours
     cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
 
@@ -47,4 +46,8 @@ if status is-interactive
     function mark_prompt_start --on-event fish_prompt
         echo -en "\e]133;A\e\\"
     end
+
+    # Custom fish config
+    set -q XDG_CONFIG_HOME && set -l cConf $XDG_CONFIG_HOME/caelestia || set -l cConf $HOME/.config/caelestia
+    source $cConf/user-config.fish 2> /dev/null
 end
