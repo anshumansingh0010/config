@@ -4,29 +4,10 @@
     "telemetry.devDeviceId": "99abdd3f-45d0-4eb8-8643-a4a51f88e0f7",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [
-            {
-                "folderUri": "file:///home/jay/.config/hypr"
-            },
-            {
-                "folderUri": "file:///home/jay/.scripts"
-            },
-            {
-                "folderUri": "file:///home/jay/cppdock"
-            },
-            {
-                "folderUri": "file:///home/jay/.config/variety"
-            },
-            {
-                "folderUri": "file:///home/jay/Codeforces"
-            }
-        ],
+        "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1785676419880"
-            },
-            {
-                "backupFolder": "1785687567697"
+                "backupFolder": "1785736087190"
             }
         ]
     },
@@ -127,8 +108,7 @@
             "file:///home/jay/Desktop/Artificial%20Intelligence/AI_lab": "__default__profile__"
         },
         "emptyWindows": {
-            "1785676419880": "__default__profile__",
-            "1785687567697": "__default__profile__"
+            "1785736087190": "__default__profile__"
         }
     },
     "theme": "vs-dark",
@@ -155,37 +135,24 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 40,
-            "sideBarWidth": 188,
+            "sideBarWidth": 0,
             "auxiliaryBarWidth": 0,
             "statusBarHeight": 32,
             "windowBorder": false,
             "modernUI": true,
             "partBounds": {
-                "sideBar": {
-                    "top": 35,
-                    "left": 43.99739456176758,
-                    "width": 182.0052032470703,
-                    "height": 700.6510009765625
-                },
-                "panel": {
-                    "top": 741.9921875,
-                    "left": 43.99739456176758,
-                    "width": 1471.0025634765625,
-                    "height": 200.65103149414062
-                },
                 "editor": {
                     "top": 35,
-                    "left": 231.9921875,
-                    "width": 1283.0078125,
-                    "height": 700.6640625
+                    "left": 43.99739456176758,
+                    "width": 1471.0025634765625,
+                    "height": 907.65625
                 }
             }
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/cppdock",
-            "backupPath": "/home/jay/.config/Code/Backups/82534ba27f943488e8ca2c3da943b638",
+            "backupPath": "/home/jay/.config/Code/Backups/1785736087190",
             "uiState": {
                 "mode": 0,
                 "x": 0,

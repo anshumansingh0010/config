@@ -1,7 +1,9 @@
 .config/gh
 .config/Code
 .config/Code - OSS
-.config/variety/Downloaded
+.config/variety/Downloaded/
+.config/variety/Fetched/
+.config/variety/wallpaper/
 .config/JetBrains/*
 .config/BraveSoftware/*
 .config/Google/Chrome/Default/Extensions/*
@@ -11,7 +13,8 @@
 .config/Antigravity/User/globalStorage/state.vscdb
 .vscode/extensions
 .vscode/workspaceStorage
-.config/mozilla/*
+.config/mozilla/
+
 
 .idea/
 *.log
