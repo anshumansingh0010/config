@@ -7,9 +7,28 @@
         "folders": [
             {
                 "folderUri": "file:///home/jay/.config/hypr"
+            },
+            {
+                "folderUri": "file:///home/jay/.scripts"
+            },
+            {
+                "folderUri": "file:///home/jay/cppdock"
+            },
+            {
+                "folderUri": "file:///home/jay/.config/variety"
+            },
+            {
+                "folderUri": "file:///home/jay/Codeforces"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1785676419880"
+            },
+            {
+                "backupFolder": "1785687567697"
+            }
+        ]
     },
     "windowControlHeight": 35,
     "profileAssociations": {
@@ -107,7 +126,10 @@
             "file:///home/jay/Desktop/Machine%20Learnig": "__default__profile__",
             "file:///home/jay/Desktop/Artificial%20Intelligence/AI_lab": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1785676419880": "__default__profile__",
+            "1785687567697": "__default__profile__"
+        }
     },
     "theme": "vs-dark",
     "themeBackground": "#272822",
@@ -134,7 +156,7 @@
             "titleBarHeight": 35,
             "activityBarWidth": 40,
             "sideBarWidth": 188,
-            "auxiliaryBarWidth": 188,
+            "auxiliaryBarWidth": 0,
             "statusBarHeight": 32,
             "windowBorder": false,
             "modernUI": true,
@@ -145,22 +167,16 @@
                     "width": 182.0052032470703,
                     "height": 700.6510009765625
                 },
-                "auxiliaryBar": {
-                    "top": 35,
-                    "left": 1338.997314453125,
-                    "width": 176.00259399414062,
-                    "height": 907.65625
-                },
                 "panel": {
                     "top": 741.9921875,
                     "left": 43.99739456176758,
-                    "width": 1289.0103759765625,
+                    "width": 1471.0025634765625,
                     "height": 200.65103149414062
                 },
                 "editor": {
                     "top": 35,
                     "left": 231.9921875,
-                    "width": 1101.0025634765625,
+                    "width": 1283.0078125,
                     "height": 700.6640625
                 }
             }
@@ -168,8 +184,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/jay/.config/hypr",
-            "backupPath": "/home/jay/.config/Code/Backups/6ec81aafa3ac445249befedee4dd8ef8",
+            "folder": "file:///home/jay/cppdock",
+            "backupPath": "/home/jay/.config/Code/Backups/82534ba27f943488e8ca2c3da943b638",
             "uiState": {
                 "mode": 0,
                 "x": 0,
@@ -185,10 +201,6 @@
             "sideBarWidth": 188,
             "auxiliaryBarWidth": 188,
             "workspaces": {
-                "19678da0698c08d42ad795aa0bc292ac": {
-                    "sideBarVisible": true,
-                    "auxiliaryBarVisible": false
-                },
                 "5e7de638cad8c7f09cc84af74396dd39": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": false
@@ -246,7 +258,7 @@
                     "auxiliaryBarVisible": false
                 },
                 "d18a4a589718ac3e5629926ae514eead": {
-                    "sideBarVisible": false,
+                    "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 },
                 "24ca2a8a58db6d229fdd072e8a1ae47d": {
@@ -384,6 +396,10 @@
                 "b1eda3f9b6e8b3e905db31e8430d0ac9": {
                     "sideBarVisible": true,
                     "auxiliaryBarVisible": true
+                },
+                "7ca31a767f24d48a69b88cb9ca5b875f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
                 }
             }
         }

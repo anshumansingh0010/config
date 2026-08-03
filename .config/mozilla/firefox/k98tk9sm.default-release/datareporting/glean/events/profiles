@@ -401,3 +401,5 @@
 {"timestamp":149671,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1785543652442","glean.startup.date":"2026-08-01T05:50+05:30"},"execution_counter":71}
 {"timestamp":31494722,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1785574999249","glean.startup.date":"2026-08-01T14:33+05:30"},"execution_counter":72}
 {"timestamp":28525476,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-08-01T23:15+05:30","glean_timestamp":"1785606303038"},"execution_counter":73}
+{"timestamp":3689038,"category":"glean","name":"restarted","extra":{"glean_timestamp":"1785642868816","glean.startup.date":"2026-08-02T09:24+05:30"},"execution_counter":74}
+{"timestamp":61464,"category":"glean","name":"restarted","extra":{"glean.startup.date":"2026-08-03T05:54+05:30","glean_timestamp":"1785716659247"},"execution_counter":75}

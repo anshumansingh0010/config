@@ -1,8 +1,5 @@
 0
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-gw2587.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-ly2ddy.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-d8w3gj.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-qrlg1r.jpg
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-og2yem.jpg
+/home/jay/.config/variety/Downloaded/Unsplash/photo-1783270805733-231e6d6033d4.jpg
+/home/jay/.config/variety/Downloaded/Unsplash/photo-1785439825908-998a48df1f32.jpg
+/home/jay/.config/variety/Downloaded/Unsplash/photo-1779582994107-c8ceb7a0e3a1.jpg
 /usr/share/backgrounds/gnome/adwaita-l.jxl
-/home/jay/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-7jr129.jpg
